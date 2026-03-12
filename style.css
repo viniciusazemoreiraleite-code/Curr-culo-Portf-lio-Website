@@ -105,7 +105,7 @@ body {
   padding: 0 2rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -120,30 +120,8 @@ body {
   }
 
   .nav-link {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
-
-  .logo-circle span {
-    font-size: 0.5rem;
-      display: block;
-  }
-}
-
-.logo-circle {
-  width: auto;
-  height: 40px;
-  background: var(--primary);
-  color: white;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  padding: .7rem;
-}
-
-.logo-link {
-  text-decoration: none;
 }
 
 .nav-list {
