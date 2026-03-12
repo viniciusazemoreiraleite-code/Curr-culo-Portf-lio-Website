@@ -51,7 +51,14 @@ body {
   width: 100%;
 }
 
-
+@media (max-width: 768px) {
+  .container-padrao, 
+  .max-w-7xl {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    overflow-x: hidden;
+  }
+}
 
 .mx-auto { margin: 0 auto; }
 .w-full { width: 100%; }
@@ -359,7 +366,7 @@ body {
   }
 
   .tab-btn {
-    flex: 1; /* Faz os botões dividirem o espaço igualmente */
+    flex: 1;
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
   }
@@ -390,20 +397,28 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Garante que o container de projetos use apenas 1 coluna */
   .cases-container, 
   .grid.md\:grid-cols-3 { 
     grid-template-columns: 1fr !important;
     gap: 1.5rem;
-    padding: 0 1rem; /* Margem interna para o card não colar nas bordas do telemóvel */
+    padding: 0 1rem;
   }
 
+  .p-6 { padding: 1.25rem !important; }
+
   .project-card {
-    width: 100%; /* Garante que o card não ultrapasse o ecrã */
+    width: 100%;
     max-width: 100%;
   }
 
-  /* Ajusta a proporção da imagem no telemóvel para não ficar muito alta */
+  .project-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .project-overlay {
+    background: rgba(61, 90, 61, 0.4);
+  }
+
   .project-image-wrapper {
     aspect-ratio: 4 / 3; 
   }
