@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designer Vinícius Azeredo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header" class="fixed-header">
+        <div class="header-content">
+            <div class="logo-container">
+            <a href="#hero" class="logo-link">
+                <div class="logo-circle">
+                    <span>Vinícius Azeredo</span>
+                </div>
+            </a>
+            </div>
+
+            <nav>
+            <ul class="nav-list">
+                <li><a href="#hero" class="nav-link">Início</a></li>
+                <li><a href="#curriculo" class="nav-link">Currículo</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="inicio" class="hero-section" href="#inicio">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="hero-grid">
+      
+      <div class="hero-image-container animate-slide-left">
+        <div class="image-wrapper shadow-2xl">
+          <img 
+            src="/public/Vinícius_Azeredo_Img.png" 
+            alt="Professional portrait"
+            class="hero-img"
+          >
+          <div class="decorative-circle"></div>
+        </div>
+      </div>
+
+      <div class="hero-text-container animate-slide-right">
+        <div class="badge">
+          <span>Web Designer & UI/UX Designer</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Olá, me chamo <br>
+          <span class="font-semibold">Vinícius Azeredo</span>
+        </h1>
+        
+        <p class="hero-description">
+          Web Designer com sólida trajetória na criação,
+          desenvolvimento e implementação de soluções digitais.
+          Especialista no desenvolvimento de interfaces para sites e aplicativos,
+          elaboração de protótipos de alta fidelidade e criação de peças visuais estratégicas.
+          Foco em unir estética funcional à experiência do usuário (UX),
+          com domínio em responsividade e identidade visual.
+          Atualmente, expandindo atuação em Product Design e Programação Front-end.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn-primary">Ver Portfólio</button>
+          <a href="/public/curriculo-vinicius-azeredo.pdf" download="Curriculo_Vinicius_Azeredo.pdf" class="btn-outline" style="text-decoration: none; display: inline-block;">
+    Baixar CV
+</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    </main>
+    <section id="secao-curriculo" class="py-20">
+    <div class="container-padrao">
+        
+        <div id="secao-tabs" class="flex justify-center mb-12">
+        <div class="tab-container inline-flex rounded-full p-1">
+            <button class="tab-btn active" data-target="curriculo">Currículo</button>
+            <button class="tab-btn" data-target="portfolio">Portfólio</button>
+        </div>
+        </div>
+
+        <div id="curriculo" class="tab-content active">
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                
+                <div class="card p-8 rounded-3xl">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                            </svg>
+                        </div>
+                        <h3 class="section-title">Experiência Profissional</h3>
+                    </div>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date">FEV 2025 - NOV 2025</span>
+                            <h4>Analista de E-Commerce</h4>
+                            <p class="subtitle">Hipromed Produtos Médicos</p>
+                            <p class="description">Desenvolvimento de interfaces focadas em acessibilidade e estética, unindo a criação de protótipos de alta fidelidade no Figma à implementação técnica em HTML/CSS.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="date">NOV 2022 - NOV 2024</span>
+                            <h4>Designer Gráfico</h4>
+                            <p class="subtitle">Metropax</p>
+                            <p class="description">Atuação focada no desenvolvimento e otimização de Landing Pages de alta conversão, aplicando estratégias de Growth Marketing para potencializar a captura de leads e a presença digital da marca.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="date">ABR 2021 - MAR 2022</span>
+                            <h4>Designer Gráfico</h4>
+                            <p class="subtitle">Super Compra do Dia</p>
+                            <p class="description">Responsável pelo desenvolvimento de peças gráficas estratégicas para campanhas digitais e marketplaces, além da estruturação de websites focados em UX/UI para otimizar a geração de leads e a presença da marca.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    
+                    <div class="card p-8 rounded-3xl">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap">
+                                    <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+                                    <path d="M22 10v6"/>
+                                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+                                </svg>
+                            </div>
+                            <h3 class="section-title">Formação</h3>
+                        </div>               
+                        <div class="education-item">
+                            <div class="education">
+                                <h4>Design Gráfico</h4>
+                                <p>Centro Universitário UNA • 2021</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-8 rounded-3xl">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award-icon lucide-award"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+                            </div>
+                            <h3 class="section-title">Habilidades</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <span class="badge">Arquitetura da Informação</span>
+                            <span class="badge">Prototipagem</span>
+                            <span class="badge">UI/UX Design</span>
+                            <span class="badge">Inteligência Artificial</span>
+                        </div>
+                    </div>
+
+                    <div class="card p-8 rounded-3xl">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil-ruler-icon lucide-pencil-ruler"><path d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13"/><path d="m8 6 2-2"/><path d="m18 16 2-2"/><path d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17"/><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>
+                            </div>
+                            <h3 class="section-title">Ferramentas</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <span class="badge">Figma</span>
+                            <span class="badge">WordPress</span>
+                            <span class="badge">Elementor</span>
+                            <span class="badge">HTML/CSS</span>
+                            <span class="badge">Google Analytics</span>
+                            <span class="badge">Microsoft Clarity</span>
+                            <span class="badge">Adobe Photoshop</span>
+                            <span class="badge">Adobe Illustrator</span>
+                            <span class="badge">Adobe Premiere</span>
+                            <span class="badge">Canva</span>
+                            <span class="badge">Affinity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio" class="tab-content">
+            <div class="cases-container">
+                <a href="https://www.behance.net/gallery/233083569/E-Commerce-Hipromed" class="card-cases" target="_blank">
+                    <div class="project-card group">
+                        <div class="project-image-wrapper">
+                            <img src="/public/Capa Ecommerce Hipromed.png" alt="E-Commerce Hipromed" class="project-image">
+                            <div class="project-overlay">
+                            <span style="color: var(--light-cream);">Ver Projeto</span>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <span class="category">E-Commerce</span>
+                            <h4>Hipromed Produtos Médicos E-Commerce</h4>
+                            <p>Criação de loja virtual para venda de produtos médicos.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://bl.hipromed.com.br/?bypass_code=IpPNvvomFEoYIRGP" class="card-cases" target="_blank">
+                    <div class="project-card group">
+                        <div class="project-image-wrapper">
+                            <img src="/public/Capa Black Friday Hipromed.png" alt="Black Friday Hipromed" class="project-image">
+                            <div class="project-overlay">
+                            <span style="color: var(--light-cream);">Ver Projeto</span>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <span class="category">E-Commerce</span>
+                            <h4>Black Friday Hipromed</h4>
+                            <p>Campanha de vendas especiais para o evento de Black Friday.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://zestlylp.framer.website/" class="card-cases" target="_blank">
+                    <div class="project-card group">
+                        <div class="project-image-wrapper">
+                            <img src="/public/Capa Zestly.png" alt="Landing Page Zestly" class="project-image">
+                            <div class="project-overlay">
+                            <span style="color: var(--light-cream);">Ver Projeto</span>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <span class="category">Landing Page</span>
+                            <h4>Zestly Landing Page</h4>
+                            <p>Landing Page focada em apresentar os serviços da Zestly.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.behance.net/gallery/206770361/Landing-Page-Metropet" class="card-cases" target="_blank">
+                    <div class="project-card group">
+                        <div class="project-image-wrapper">
+                            <img src="/public/Capa Landing Page Metropet.png" alt="Landing Page Metropet" class="project-image">
+                            <div class="project-overlay">
+                            <span style="color: var(--light-cream);">Ver Projeto</span>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <span class="category">Landing Page</span>
+                            <h4>Landing Page Metropet</h4>
+                            <p>Landing Page focada em apresentar os serviços da Metropet.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.behance.net/gallery/206768361/Landing-Page-Planos-Metropax" class="card-cases" target="_blank">
+                    <div class="project-card group">
+                        <div class="project-image-wrapper">
+                            <img src="/public/Capa Landing Page Metropax.png" alt="Landing Page Metropax" class="project-image">
+                            <div class="project-overlay">
+                            <span style="color: var(--light-cream);">Ver Projeto</span>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <span class="category">Landing Page</span>
+                            <h4>Landing Page Metropax</h4>
+                            <p>Landing Page focada em apresentar os serviços da Metropax.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.behance.net/gallery/178322013/Projetos-realizados-Metropax" class="card-cases" target="_blank">
+                    <div class="project-card group">
+                        <div class="project-image-wrapper">
+                            <img src="/public/Capa Projetos Realizados Metropax.png" alt="Branding Metropax" class="project-image">
+                            <div class="project-overlay">
+                            <span style="color: var(--light-cream);">Ver Projeto</span>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <span class="category">Branding</span>
+                            <h4>Branding Metropax</h4>
+                            <p>Identidade visual completa para a marca Metropax.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    </section>
+    <footer id="contato" class="footer-section">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="footer-content text-center">
+            
+            <div class="decorative-separator">
+                <div class="line"></div>
+                <div class="dot"></div>
+                <div class="line"></div>
+            </div>
+
+            <h2 class="footer-title">Vamos Conversar?</h2>
+
+            <div class="contact-info" style="justify-items: center;">
+                <a href="mailto:viniam_leite@hotmail.com" class="contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>                <span>viniam_leite@hotmail.com</span>
+                </a>
+                <div class="vertical-divider hidden-md"></div>
+                <a href="tel:+5531982142508" class="contact-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>+55 31 98214-2508</span>
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/viniazere/" class="social-icon" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="https://github.com/viniciusazemoreiraleite-code" class="social-icon" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="https://www.instagram.com/viniciusmlft/" class="social-icon" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </a>
+            </div>
+
+            <div class="copyright">
+                <p>© 2026 Vinícius Azeredo. Todos os direitos reservados.</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
