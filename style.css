@@ -102,6 +102,24 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 1rem;
+  }
+
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+  }
+
+  .logo-circle span {
+    font-size: 0.9rem;
+  }
+}
+
 .logo-circle {
   width: auto;
   height: 40px;
@@ -148,9 +166,31 @@ body {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 100px;
+    height: auto;
+    min-height: auto;
+  }
+
   .hero-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-img {
+    height: 300px;
+    order: -1;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -312,6 +352,19 @@ body {
   font-weight: 500;
 }
 
+@media (max-width: 768px) {
+  .tab-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .tab-btn {
+    flex: 1; /* Faz os botões dividirem o espaço igualmente */
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
 .tab-btn.active {
   background: var(--primary);
   color: white;
@@ -337,9 +390,22 @@ body {
 }
 
 @media (max-width: 768px) {
-  .cases-container {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
+  /* Garante que o container de projetos use apenas 1 coluna */
+  .cases-container, 
+  .grid.md\:grid-cols-3 { 
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+    padding: 0 1rem; /* Margem interna para o card não colar nas bordas do telemóvel */
+  }
+
+  .project-card {
+    width: 100%; /* Garante que o card não ultrapasse o ecrã */
+    max-width: 100%;
+  }
+
+  /* Ajusta a proporção da imagem no telemóvel para não ficar muito alta */
+  .project-image-wrapper {
+    aspect-ratio: 4 / 3; 
   }
 }
 
