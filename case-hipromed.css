@@ -40,7 +40,7 @@
 @media (max-width: 768px) {
   .case-hero-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 
@@ -50,13 +50,25 @@
   display: block;
 }
 
-@media screen and (max-width: 768px) {
-  .thumb-hipromed .project-image-wrapper {
-    width: auto;
-    height: auto;
 
-  }
+@media (max-width: 768px) {
   
+
+  .project-image-wrapper {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  .thumb-do-projeto {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .case-meta-strip {
