@@ -1,0 +1,42 @@
+.case-zestly .case-hero-grid { gap: clamp(28px, 5vw, 76px); }
+.case-zestly-hero-visual { overflow: hidden; border: 1px solid var(--line); background: var(--surface); }
+.case-zestly-hero-visual img { display: block; width: 100%; height: auto; aspect-ratio: 1.91; object-fit: cover; }
+.case-zestly-intro { max-width: 520px; margin-top: 20px; }
+.case-zestly .case-meta-item { min-height: 108px; }
+.case-zestly .case-meta-item .subtitle { margin: 8px 0 0; color: var(--ink); font-size: 14px; line-height: 1.45; }
+.case-zestly .category { color: var(--muted); }
+.case-zestly-summary { align-self: center; display: block; width: 100%; padding: 0; overflow: hidden; border: 1px solid var(--line); }
+.case-zestly-summary img { display: block; width: 100%; height: auto; object-fit: contain; }
+.case-zestly-section-lead { max-width: 760px; }
+.case-zestly .case-zestly-challenge-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 36px; }
+.case-zestly .case-problem-card { align-items: flex-start; padding: 2rem; border: 1px solid var(--line); background: var(--surface); }
+.case-zestly .case-problem-card .icon-wrapper { margin: 0; }
+.case-zestly .case-step-card { padding: 2rem; border: 1px solid var(--line); background: var(--surface); }
+.case-zestly-swatches .case-swatch-meta { overflow-wrap: anywhere; }
+.case-zestly-color-notes { display: grid; gap: 12px; margin: 24px 0 0; padding: 20px 0 0; border-top: 1px solid var(--line); list-style: none; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.case-zestly-color-notes strong { color: var(--ink); }
+.case-zestly-roboto { font-family: Roboto, sans-serif; }
+.case-zestly-montserrat { font-family: 'Montserrat Alternates', sans-serif; }
+.case-zestly-albert { font-family: 'Albert Sans', sans-serif; font-weight: 600; }
+.case-zestly-live-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 28px; }
+.case-zestly .case-results-grid { gap: 14px; }
+.case-zestly .case-result-card { padding: 2rem; border: 1px solid var(--line); background: var(--surface); }
+.case-zestly .case-result-number { color: var(--moss); }
+.case-zestly .case-learning-stack { gap: 14px; }
+.case-zestly .case-learning-card { padding: 2rem; border: 1px solid var(--line); background: var(--surface); }
+.case-zestly .case-learning-num { color: var(--moss); }
+.case-zestly .case-back-to-top:hover { background: var(--moss); color: var(--paper); }
+
+@media (max-width: 900px) {
+  .case-zestly .case-meta-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .case-zestly .case-meta-item:nth-child(2) { border-right: 0; }
+  .case-zestly .case-meta-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+}
+
+@media (max-width: 620px) {
+  .case-zestly .case-meta-item { min-height: 92px; padding: 16px 12px; }
+  .case-zestly .case-meta-item .subtitle { font-size: 12px; }
+  .case-zestly .case-steps-grid { display: grid; grid-template-columns: 1fr; }
+  .case-zestly .case-zestly-challenge-grid { grid-template-columns: 1fr; }
+  .case-zestly-swatches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

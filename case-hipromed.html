@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3f1e8">
+  <meta name="description" content="Case de UX/UI do e-commerce Hipromed por Vinícius Azeredo, da prototipagem à implementação.">
   <title>Case Hipromed — Vinícius Azeredo</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio.css">
   <link rel="stylesheet" href="case-hipromed.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <header id="main-header" class="fixed-header">
-    <div class="header-content">
-      <nav>
-        <ul class="nav-list">
-          <li><a href="index.html#hero"      class="nav-link">Início</a></li>
-          <li><a href="index.html#curriculo" class="nav-link">Currículo</a></li>
-          <li><a href="index.html#portfolio" class="nav-link">Portfólio</a></li>
-          <li><a href="index.html#contato"   class="nav-link">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html#topo" aria-label="Vinícius Azeredo, início"><span class="wordmark-name">Vinícius Azeredo</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#experiencia">Experiência</a>
+      <a href="index.html#projetos">Projetos</a>
+      <a class="nav-contact" href="index.html#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+    </nav>
   </header>
 
 
-  <main class="case-page">
+  <main class="case-page" id="conteudo">
 
-    <section class="case-hero">
+    <section class="case-hero" id="topo">
       <div class="container-padrao">
 
         <div class="case-breadcrumb case-fade">
-          <a href="index.html#portfolio">Portfólio</a>
+          <a href="index.html#projetos">Portfólio</a>
           <span>›</span>
           <span>Hipromed</span>
         </div>
@@ -52,7 +54,7 @@
             </p>
 
             <div class="hero-actions case-fade case-delay-4">
-              <a href="/index.html" class="btn-outline">← Voltar ao portfólio</a>
+              <a href="index.html#projetos" class="btn-outline">← Voltar ao portfólio</a>
             </div>
           </div>
 
@@ -191,7 +193,7 @@
         <div class="case-ds-grid">
 
           <div class="card">
-            <div class="flex items-center gap-3" style="margin-bottom:20px">
+            <div class="case-ds-card-heading">
               <div class="icon-wrapper">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
               </div>
@@ -223,7 +225,7 @@
           </div>
 
           <div class="card">
-            <div class="flex items-center gap-3" style="margin-bottom:20px">
+            <div class="case-ds-card-heading">
               <div class="icon-wrapper">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" x2="15" y1="20" y2="20"/><line x1="12" x2="12" y1="4" y2="20"/></svg>
               </div>
@@ -231,18 +233,18 @@
             </div>
             <div class="case-type-stack">
               <div class="case-type-sample">
-                <span class="category" style="display:block; margin-bottom:6px">Poppins — Títulos & UI</span>
-                <span style="font-family:'Poppins',sans-serif; font-size:28px; font-weight:600; color:var(--deep-moss-green); line-height:1.1">AaBbCc 123</span>
+                <span class="category">Poppins — Títulos & UI</span>
+                <p class="case-type-specimen case-type-poppins">AaBbCc 123</p>
               </div>
               <div class="case-type-sample">
-                <span class="category" style="display:block; margin-bottom:6px">Montserrat — Corpo & Secundário</span>
-                <p class="description" style="margin:0; font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 400;">AaBbCc 123</p>
+                <span class="category">Montserrat — Corpo & Secundário</span>
+                <p class="case-type-specimen case-type-montserrat">AaBbCc 123</p>
               </div>
             </div>
           </div>
 
           <div class="card">
-            <div class="flex items-center gap-3" style="margin-bottom:20px">
+            <div class="case-ds-card-heading">
               <div class="icon-wrapper">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
               </div>
@@ -268,7 +270,7 @@
           </div>
 
           <div class="card">
-            <div class="flex items-center gap-3" style="margin-bottom:20px">
+            <div class="case-ds-card-heading">
               <div class="icon-wrapper">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 3H3"/><path d="M21 21H3"/><path d="M12 7v10"/><path d="M8 11l4-4 4 4"/><path d="M8 13l4 4 4-4"/></svg>
               </div>
@@ -347,6 +349,15 @@
             </div>
           </div>
         </div>
+
+        <details class="full-home-disclosure">
+          <summary>Mostrar home completa <span aria-hidden="true">＋</span></summary>
+          <button class="full-home-zoom-trigger" type="button" aria-label="Ampliar imagem da home completa da Hipromed">
+            <img src="/assets/hipromed.com.br_ 1.png" alt="Página inicial completa do e-commerce Hipromed" loading="lazy">
+            <span class="full-home-zoom-hint">Clique na imagem para ampliar</span>
+          </button>
+          <button class="full-home-hide" type="button">Esconder home completa</button>
+        </details>
       </div>
     </section>
 
@@ -456,52 +467,25 @@
 
   </main>
 
+  <a class="case-back-to-top" href="#topo" aria-label="Voltar ao topo do projeto" title="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6" /></svg>
+  </a>
 
-  <footer id="contato" class="footer-section">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="footer-content text-center">
+  <dialog class="full-home-lightbox" aria-label="Imagem ampliada da home completa da Hipromed">
+    <button class="full-home-lightbox-close" type="button" aria-label="Fechar imagem ampliada">Fechar <span aria-hidden="true">×</span></button>
+    <img src="assets/hipromed.com.br_ 1.png" alt="Página inicial completa do e-commerce Hipromed, ampliada">
+  </dialog>
 
-        <div class="decorative-separator">
-          <div class="line"></div>
-          <div class="dot"></div>
-          <div class="line"></div>
-        </div>
 
-        <h2 class="footer-title">Vamos conversar?</h2>
-
-        <div class="contact-info" style="justify-items:center">
-          <a href="mailto:viniam_leite@email.com" class="contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
-            <span>viniam_leite@email.com</span>
-          </a>
-          <div class="vertical-divider hidden-md"></div>
-          <a href="tel:+5531982142508" class="contact-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>+55 31 98214-2508</span>
-          </a>
-        </div>
-
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/viniazere/" class="social-icon" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://github.com/viniciusazemoreiraleite-code" class="social-icon" aria-label="GitHub">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-          </a>
-          <a href="https://www.instagram.com/viniciusmlft/" class="social-icon" aria-label="Instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-          </a>
-        </div>
-
-        <div class="copyright">
-          <p>© 2026 Vinícius Azeredo. Todos os direitos reservados.</p>
-        </div>
-
-      </div>
-    </div>
+  <footer class="contact" id="contato" aria-labelledby="contact-title">
+    <div class="contact-top"><span class="eyebrow">Contato</span><span class="availability"><span class="availability-dot"></span> Aberto a boas conversas</span></div>
+    <h2 id="contact-title">Vamos conversar<br><em>sobre seu projeto?</em></h2>
+    <a class="contact-email" href="mailto:viniam_leite@hotmail.com">viniam_leite@hotmail.com <span aria-hidden="true">↗</span></a>
+    <div class="contact-bottom"><a href="tel:+5531982142508">+55 31 98214-2508</a><div class="social-links"><a href="https://www.linkedin.com/in/viniazere/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.behance.net/vinciuazeredo" target="_blank" rel="noreferrer">Behance ↗</a><a href="https://www.instagram.com/viniciusmlft/" target="_blank" rel="noreferrer">Instagram ↗</a></div></div>
   </footer>
 
-  <script src="main.js"></script>
+  <footer class="site-footer"><a class="wordmark" href="index.html#topo"><span class="wordmark-name">Vinícius Azeredo</span></a><span>© <span id="year">2026</span> Vinícius Azeredo</span><a href="#topo">Voltar ao início ↑</a></footer>
+  <script src="main.js" defer></script>
 
 </body>
 </html>
