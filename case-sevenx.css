@@ -7,10 +7,13 @@
 .case-sevenx-overview .description { margin: 0 0 16px; }
 .case-sevenx-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
 .case-sevenx-work-section { border-bottom: 0; }
-.case-sevenx-brand-tabs { position: relative; z-index: 1; display: flex; justify-content: center; width: min(100%, 760px); margin: clamp(48px, 7vw, 84px) auto -1px; }
-.case-sevenx-brand-tab { flex: 1; padding: 18px 32px; border: 1px solid var(--line); border-bottom-color: var(--moss); border-radius: 12px 12px 0 0; background: var(--celery); color: var(--muted); cursor: pointer; font: 600 15px/1 var(--sans); transition: color .2s ease, background .2s ease; }
-.case-sevenx-brand-tab + .case-sevenx-brand-tab { margin-left: 5px; }
-.case-sevenx-brand-tab.is-active { border-bottom-color: var(--surface); background: var(--surface); color: var(--ink); }
+.case-sevenx-brand-tabs { position: relative; z-index: 1; display: flex; width: 100vw; height: 56px; margin: clamp(48px, 7vw, 84px) 0 -1px calc(50% - 50vw); overflow: hidden; background: var(--celery); }
+.case-sevenx-brand-tab { position: relative; flex: 1; min-width: 0; padding: 18px 32px; border: 0; background: var(--celery); color: var(--ink); cursor: pointer; font: 600 15px/1 var(--sans); transition: color .2s ease, background .2s ease; }
+.case-sevenx-brand-tab:first-child { clip-path: polygon(0 0, 100% 0, calc(100% - 8px) 100%, 0 100%); }
+.case-sevenx-brand-tab + .case-sevenx-brand-tab { margin-left: -8px; clip-path: polygon(8px 0, 100% 0, 100% 100%, 0 100%); }
+.case-sevenx-brand-tab.is-active { z-index: 2; background: var(--surface); color: var(--ink); }
+.case-sevenx-brand-tab[data-brand-tab="bullsbet"].is-active { filter: drop-shadow(7px 0 5px rgba(35, 45, 30, .16)); }
+.case-sevenx-brand-tab[data-brand-tab="jogao"].is-active { filter: drop-shadow(-7px 0 5px rgba(35, 45, 30, .16)); }
 .case-sevenx-brand-tab:focus-visible { outline: 2px solid var(--moss); outline-offset: 3px; }
 .case-sevenx-brand[hidden] { display: none !important; }
 .case-sevenx-brand { background: var(--surface); }
