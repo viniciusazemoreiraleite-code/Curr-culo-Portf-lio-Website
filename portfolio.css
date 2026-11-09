@@ -13,7 +13,8 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
-body { margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
+body { position: relative; isolation: isolate; margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
+.fluid-particles { position: fixed; inset: 0; z-index: -1; width: 100%; height: 100%; pointer-events: none; opacity: .72; }
 main.case-page { padding-top: 0; }
 .case-heading, .case-hero .hero-title, .footer-title { font-family: var(--serif); font-weight: 400; letter-spacing: -.025em; }
 img { display: block; width: 100%; height: 100%; object-fit: cover; }
@@ -193,7 +194,7 @@ h1 em, h2 em { font-weight: 400; color: var(--moss); }
   .hero h1 em { position: relative; left: 5%; width: 100%; text-align: center; line-height: .9; }
   .hero-lower { margin-top: 23px; align-items: flex-start; flex-direction: column; gap: 16px; }
   .hero-lower p { font-size: 14px; }
-  .hero-gallery { height: 235px; grid-template-columns: .8fr 1.2fr .9fr; gap: 7px; margin-top: 68px; }
+  .hero-gallery { display: none; }
   .gallery-photo { height: 68%; }
   .gallery-work { height: 84%; }
   .gallery-work-wide { height: 100%; }
@@ -212,7 +213,7 @@ h1 em, h2 em { font-weight: 400; color: var(--moss); }
   .section-intro { display: block; margin: 35px 0 25px; }
   .section-intro h2, .projects-heading h2 { font-size: 56px; }
   .section-intro p { max-width: 260px; margin-top: 12px; }
-  .timeline-item { grid-template-columns: 1fr; gap: 7px; padding: 19px 0 27px; }
+  .timeline-item { grid-template-columns: 1fr; gap: 7px; padding: 19px 8px 27px; }
   .timeline-date { font-size: 9px; }
   .timeline-role h3 { font-size: 25px; }
   .timeline-description { font-size: 12px; }
