@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f3f1e8">
-  <meta name="description" content="Case de UX/UI do e-commerce Hipromed por Vinícius Azeredo, da prototipagem à implementação.">
-  <title>Case Hipromed — Vinícius Azeredo</title>
+  <meta name="description" content="Case de UX/UI do e-commerce Hipromed por Vinícius Azeredo, da prototipagem à implementação." data-description-pt="Case de UX/UI do e-commerce Hipromed por Vinícius Azeredo, da prototipagem à implementação." data-description-en="UX/UI case study for Hipromed e-commerce by Vinícius Azeredo, from prototyping to implementation.">
+  <title data-title-pt="Case Hipromed — Vinícius Azeredo" data-title-en="Hipromed Case Study — Vinícius Azeredo">Case Hipromed — Vinícius Azeredo</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="portfolio.css">
   <link rel="stylesheet" href="case-hipromed.css">
@@ -14,27 +14,70 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip-link" href="#conteudo" data-i18n="skipLink">Pular para o conteúdo</a>
 
   <header class="site-header">
     <a class="wordmark" href="index.html#topo" aria-label="Vinícius Azeredo, início"><span class="wordmark-name">Vinícius Azeredo</span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
     <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
-      <a href="index.html#sobre">Sobre</a>
-      <a href="index.html#experiencia">Experiência</a>
-      <a href="index.html#projetos">Projetos</a>
-      <a class="nav-contact" href="index.html#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+      <a href="index.html#sobre" data-i18n="navAbout">Sobre</a>
+      <a href="index.html#experiencia" data-i18n="navExperience">Experiência</a>
+      <a href="index.html#projetos" data-i18n="navProjects">Projetos</a>
+      <a class="nav-contact" href="#contato"><span data-i18n="navContact">Vamos conversar</span> <span aria-hidden="true">↗</span></a>
+      <div class="language-switch" role="group" aria-label="Idioma / Language">
+        <button class="language-option is-active" type="button" data-language="pt" aria-pressed="true" aria-label="Português">
+          <svg class="flag-icon" viewBox="0 0 32 32" width="16" height="16" aria-hidden="true" focusable="false">
+            <clipPath id="flag-br-clip">
+              <circle cx="16" cy="16" r="16"/>
+            </clipPath>
+            <g clip-path="url(#flag-br-clip)">
+              <rect width="32" height="32" fill="#009b3a"/>
+              <polygon points="16,5.2 27.2,16 16,26.8 4.8,16" fill="#fedf00"/>
+              <circle cx="16" cy="16" r="6.2" fill="#002776"/>
+              <path d="M10.1,17 C12.2,14.3 19.8,14.3 21.9,17" fill="none" stroke="#ffffff" stroke-width="1.25" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <span>Português</span>
+        </button>
+        <button class="language-option" type="button" data-language="en" aria-pressed="false" aria-label="English">
+          <svg class="flag-icon" viewBox="0 0 32 32" width="16" height="16" aria-hidden="true" focusable="false">
+            <clipPath id="flag-us-clip">
+              <circle cx="16" cy="16" r="16"/>
+            </clipPath>
+            <g clip-path="url(#flag-us-clip)">
+              <rect width="32" height="32" fill="#ffffff"/>
+              <path d="M0,0H32V2.46H0ZM0,4.92H32V7.38H0ZM0,9.84H32V12.3H0ZM0,14.76H32V17.22H0ZM0,19.68H32V22.14H0ZM0,24.6H32V27.06H0ZM0,29.52H32V32H0Z" fill="#b22234"/>
+              <rect width="14" height="17.22" fill="#3c3b6e"/>
+              <g fill="#ffffff">
+                <circle cx="3" cy="3.2" r="0.9"/>
+                <circle cx="7" cy="3.2" r="0.9"/>
+                <circle cx="11" cy="3.2" r="0.9"/>
+                <circle cx="5" cy="6.2" r="0.9"/>
+                <circle cx="9" cy="6.2" r="0.9"/>
+                <circle cx="3" cy="9.2" r="0.9"/>
+                <circle cx="7" cy="9.2" r="0.9"/>
+                <circle cx="11" cy="9.2" r="0.9"/>
+                <circle cx="5" cy="12.2" r="0.9"/>
+                <circle cx="9" cy="12.2" r="0.9"/>
+                <circle cx="3" cy="15.2" r="0.9"/>
+                <circle cx="7" cy="15.2" r="0.9"/>
+                <circle cx="11" cy="15.2" r="0.9"/>
+              </g>
+            </g>
+          </svg>
+          <span>English</span>
+        </button>
+      </div>
     </nav>
   </header>
 
-
-  <main class="case-page" id="conteudo">
+  <main class="case-page case-hipromed" id="conteudo">
 
     <section class="case-hero" id="topo">
       <div class="container-padrao">
 
         <div class="case-breadcrumb case-fade">
-          <a href="index.html#projetos">Portfólio</a>
+          <a href="index.html#projetos" data-i18n="breadcrumbPortfolio">Portfólio</a>
           <span>›</span>
           <span>Hipromed</span>
         </div>
@@ -42,19 +85,19 @@
         <div class="case-hero-grid">
 
           <div>
-            <span class="category case-fade case-delay-1">E-Commerce · Saúde</span>
+            <span class="category case-fade case-delay-1" data-i18n="hipromedHeroCat">E-Commerce · Saúde</span>
 
-            <h1 class="hero-title case-fade case-delay-2">
+            <h1 class="hero-title case-fade case-delay-2" data-i18n="hipromedHeroTitle">
               Hipromed<br>Produtos Médicos
             </h1>
 
-            <p class="description case-fade case-delay-3" style="font-size:1rem; max-width:480px;">
+            <p class="description case-fade case-delay-3" style="font-size:1rem; max-width:480px;" data-i18n="hipromedHeroDesc">
               Expansão digital de uma empresa B2B para o mercado B2C — criando do zero a
               jornada de compra, a identidade visual e a credibilidade online para um novo público.
             </p>
 
             <div class="hero-actions case-fade case-delay-4">
-              <a href="index.html#projetos" class="btn-outline">← Voltar ao portfólio</a>
+              <a href="index.html#projetos" class="btn-outline" data-i18n="btnBackPortfolio">← Voltar ao portfólio</a>
             </div>
           </div>
 
@@ -68,39 +111,37 @@
       </div>
     </section>
 
-
     <div class="case-meta-strip">
       <div class="container-padrao">
         <div class="case-meta-grid">
           <div class="case-meta-item">
-            <span class="category">Função</span>
+            <span class="category" data-i18n="metaRole">Função</span>
             <p class="subtitle" style="margin:0">UX/UI Designer</p>
           </div>
           <div class="case-meta-item">
-            <span class="category">Tipo de projeto</span>
-            <p class="subtitle" style="margin:0">E-commerce B2C</p>
+            <span class="category" data-i18n="metaProjectType">Tipo de projeto</span>
+            <p class="subtitle" style="margin:0" data-i18n="hipromedMetaType">E-commerce B2C</p>
           </div>
           <div class="case-meta-item">
-            <span class="category">Plataforma</span>
+            <span class="category" data-i18n="metaPlatform">Plataforma</span>
             <p class="subtitle" style="margin:0">Web</p>
           </div>
           <div class="case-meta-item">
-            <span class="category">Período</span>
-            <p class="subtitle" style="margin:0">Fev – Nov 2025</p>
+            <span class="category" data-i18n="metaTimeline">Período</span>
+            <p class="subtitle" style="margin:0" data-i18n="hipromedMetaTimeline">Fev – Nov 2025</p>
           </div>
         </div>
       </div>
     </div>
-
 
     <section class="case-section">
       <div class="container-padrao">
         <div class="case-challenge-grid">
 
           <div>
-            <span class="case-eyebrow">O Desafio</span>
-            <h2 class="case-heading">Do atacado para a vitrine digital</h2>
-            <p class="description" style="font-size:1rem; max-width:100%">
+            <span class="case-eyebrow" data-i18n="hipromedChallengeEyebrow">O Desafio</span>
+            <h2 class="case-heading" data-i18n="hipromedChallengeHeading">Do atacado para a vitrine digital</h2>
+            <p class="description" style="font-size:1rem; max-width:100%" data-i18n="hipromedChallengeDesc">
               A Hipromed operava exclusivamente no modelo B2B — hospitais e clínicas eram os
               únicos clientes. O presidente queria expandir para o público B2C: profissionais
               autônomos e pacientes da área da saúde. O problema? Zero presença digital, zero
@@ -113,24 +154,24 @@
             <div class="card case-problem-card">
               <div class="icon-wrapper">🚫</div>
               <div>
-                <h4 style="margin-bottom:4px">Sem presença digital</h4>
-                <p class="description" style="margin:0">A empresa não tinha site, loja virtual ou qualquer ponto de contato com o consumidor final.</p>
+                <h4 style="margin-bottom:4px" data-i18n="hipromedProb1Title">Sem presença digital</h4>
+                <p class="description" style="margin:0" data-i18n="hipromedProb1Desc">A empresa não tinha site, loja virtual ou qualquer ponto de contato com o consumidor final.</p>
               </div>
             </div>
 
             <div class="card case-problem-card">
               <div class="icon-wrapper">⚠️</div>
               <div>
-                <h4 style="margin-bottom:4px">Falta de credibilidade online</h4>
-                <p class="description" style="margin:0">Sem reviews, sem parceiros visíveis e sem posicionamento de marca para o público B2C.</p>
+                <h4 style="margin-bottom:4px" data-i18n="hipromedProb2Title">Falta de credibilidade online</h4>
+                <p class="description" style="margin:0" data-i18n="hipromedProb2Desc">Sem reviews, sem parceiros visíveis e sem posicionamento de marca para o público B2C.</p>
               </div>
             </div>
 
             <div class="card case-problem-card">
               <div class="icon-wrapper">🎯</div>
               <div>
-                <h4 style="margin-bottom:4px">Novo público, nova jornada</h4>
-                <p class="description" style="margin:0">Profissionais autônomos e pacientes têm necessidades muito diferentes de compradores institucionais.</p>
+                <h4 style="margin-bottom:4px" data-i18n="hipromedProb3Title">Novo público, nova jornada</h4>
+                <p class="description" style="margin:0" data-i18n="hipromedProb3Desc">Profissionais autônomos e pacientes têm necessidades muito diferentes de compradores institucionais.</p>
               </div>
             </div>
 
@@ -139,12 +180,11 @@
       </div>
     </section>
 
-
     <section class="case-section">
       <div class="container-padrao">
 
-        <span class="case-eyebrow">Processo</span>
-        <h2 class="case-heading">Como o projeto foi construído</h2>
+        <span class="case-eyebrow" data-i18n="hipromedProcessEyebrow">Processo</span>
+        <h2 class="case-heading" data-i18n="hipromedProcessHeading">Como o projeto foi construído</h2>
 
         <div class="case-steps-grid">
 
@@ -152,41 +192,40 @@
             <span class="category">01</span>
             <div class="icon-wrapper" style="margin-bottom:16px">🎤</div>
             <h4 style="margin-bottom:8px">Discovery</h4>
-            <p class="description" style="margin:0">Entrevista com o presidente da empresa para mapear objetivos, público-alvo e restrições do negócio.</p>
+            <p class="description" style="margin:0" data-i18n="hipromedStep1Desc">Entrevista com o presidente da empresa para mapear objetivos, público-alvo e restrições do negócio.</p>
           </div>
 
           <div class="card case-step-card">
             <span class="category">02</span>
             <div class="icon-wrapper" style="margin-bottom:16px">🔍</div>
             <h4 style="margin-bottom:8px">Benchmarking</h4>
-            <p class="description" style="margin:0">Análise de e-commerces de saúde nacionais e internacionais para mapear padrões e oportunidades.</p>
+            <p class="description" style="margin:0" data-i18n="hipromedStep2Desc">Análise de e-commerces de saúde nacionais e internacionais para mapear padrões e oportunidades.</p>
           </div>
 
           <div class="card case-step-card">
             <span class="category">03</span>
             <div class="icon-wrapper" style="margin-bottom:16px">🎨</div>
             <h4 style="margin-bottom:8px">Design System</h4>
-            <p class="description" style="margin:0">Criação da identidade visual com paleta, tipografia e componentes alinhados aos valores da marca.</p>
+            <p class="description" style="margin:0" data-i18n="hipromedStep3Desc">Criação da identidade visual com paleta, tipografia e componentes alinhados aos valores da marca.</p>
           </div>
 
           <div class="card case-step-card">
             <span class="category">04</span>
             <div class="icon-wrapper" style="margin-bottom:16px">📐</div>
-            <h4 style="margin-bottom:8px">UI & Entrega</h4>
-            <p class="description" style="margin:0">Prototipação das telas principais priorizando conversão e credibilidade para o novo público B2C.</p>
+            <h4 style="margin-bottom:8px" data-i18n="hipromedStep4Title">UI & Entrega</h4>
+            <p class="description" style="margin:0" data-i18n="hipromedStep4Desc">Prototipação das telas principais priorizando conversão e credibilidade para o novo público B2C.</p>
           </div>
 
         </div>
       </div>
     </section>
 
-
     <section class="case-section">
       <div class="container-padrao">
 
         <span class="case-eyebrow">Design System</span>
-        <h2 class="case-heading">Identidade Visual & Tokens</h2>
-        <p class="description" style="font-size:1rem">
+        <h2 class="case-heading" data-i18n="hipromedDsHeading">Identidade Visual & Tokens</h2>
+        <p class="description" style="font-size:1rem" data-i18n="hipromedDsLead">
           Paleta e tipografia escolhidas para transmitir confiança, modernidade e clareza — valores essenciais em produtos de saúde.
         </p>
 
@@ -197,27 +236,27 @@
               <div class="icon-wrapper">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
               </div>
-              <h3 class="section-title">Paleta de Cores</h3>
+              <h3 class="section-title" data-i18n="hipromedPaletteTitle">Paleta de Cores</h3>
             </div>
             <div class="case-swatch-row">
               <div class="case-swatch-item">
                 <div class="case-swatch-block" style="background:#2CA4B4"></div>
                 <div class="case-swatch-meta">
-                  <div class="case-swatch-name">Teal Principal</div>
+                  <div class="case-swatch-name" data-i18n="hipromedColor1">Teal Principal</div>
                   <div class="case-swatch-hex">#2CA4B4</div>
                 </div>
               </div>
               <div class="case-swatch-item">
                 <div class="case-swatch-block" style="background:#FFFFFF; border-bottom:1px solid var(--border)"></div>
                 <div class="case-swatch-meta">
-                  <div class="case-swatch-name">Branco</div>
+                  <div class="case-swatch-name" data-i18n="hipromedColor2">Branco</div>
                   <div class="case-swatch-hex">#FFFFFF</div>
                 </div>
               </div>
               <div class="case-swatch-item">
                 <div class="case-swatch-block" style="background:#878786"></div>
                 <div class="case-swatch-meta">
-                  <div class="case-swatch-name">Cinza</div>
+                  <div class="case-swatch-name" data-i18n="hipromedColor3">Cinza</div>
                   <div class="case-swatch-hex">#878786</div>
                 </div>
               </div>
@@ -229,15 +268,15 @@
               <div class="icon-wrapper">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" x2="15" y1="20" y2="20"/><line x1="12" x2="12" y1="4" y2="20"/></svg>
               </div>
-              <h3 class="section-title">Tipografia</h3>
+              <h3 class="section-title" data-i18n="hipromedTypeTitle">Tipografia</h3>
             </div>
             <div class="case-type-stack">
               <div class="case-type-sample">
-                <span class="category">Poppins — Títulos & UI</span>
+                <span class="category" data-i18n="hipromedType1">Poppins — Títulos & UI</span>
                 <p class="case-type-specimen case-type-poppins">AaBbCc 123</p>
               </div>
               <div class="case-type-sample">
-                <span class="category">Montserrat — Corpo & Secundário</span>
+                <span class="category" data-i18n="hipromedType2">Montserrat — Corpo & Secundário</span>
                 <p class="case-type-specimen case-type-montserrat">AaBbCc 123</p>
               </div>
             </div>
@@ -248,22 +287,22 @@
               <div class="icon-wrapper">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
               </div>
-              <h3 class="section-title">Componentes</h3>
+              <h3 class="section-title" data-i18n="hipromedCompTitle">Componentes</h3>
             </div>
             <div style="display:flex; flex-direction:column; gap:14px">
               <div class="hero-actions" style="margin-top:0">
-                <button class="btn-primary" style="font-size:0.85rem; padding:0.6rem 1.4rem; background-color: #2CA4B4; border: none;">Comprar</button>
-                <button class="btn-outline" style="font-size:0.85rem; padding:0.6rem 1.4rem; border: 2px solid #2CA4B4; color: #2CA4B4; background: transparent;">Ver mais</button>
+                <button class="btn-primary" style="font-size:0.85rem; padding:0.6rem 1.4rem; background-color: #2CA4B4; border: none;" data-i18n="hipromedBtnBuy">Comprar</button>
+                <button class="btn-outline" style="font-size:0.85rem; padding:0.6rem 1.4rem; border: 2px solid #2CA4B4; color: #2CA4B4; background: transparent;" data-i18n="hipromedBtnView">Ver mais</button>
               </div>
               <div style="display:flex; gap:10px; flex-wrap:wrap">
-                <span class="badge" style="background-color: #2CA4B4; border: none; color: #FFFFFF;">Oferta especial</span>
-                <span class="badge" style="border: 2px solid #2CA4B4; color: #2CA4B4; background: transparent;">Envio rápido</span>
+                <span class="badge" style="background-color: #2CA4B4; border: none; color: #FFFFFF;" data-i18n="hipromedBadgeOffer">Oferta especial</span>
+                <span class="badge" style="border: 2px solid #2CA4B4; color: #2CA4B4; background: transparent;" data-i18n="hipromedBadgeShipping">Envio rápido</span>
               </div>
               <div class="card" style="display:flex; align-items:center; gap:10px; padding:12px">
                 <div class="icon-wrapper" style="font-size:16px;">🫀</div>
                 <div>
-                  <p class="subtitle" style="margin:0; font-size:12px; color: #2CA4B4;">Cabo ECG 10 Vias</p>
-                  <p class="description" style="margin:0; color: #13CB55;">R$ 349,00 · Em estoque</p>
+                  <p class="subtitle" style="margin:0; font-size:12px; color: #2CA4B4;" data-i18n="hipromedProductTitle">Cabo ECG 10 Vias</p>
+                  <p class="description" style="margin:0; color: #13CB55;" data-i18n="hipromedProductStock">R$ 349,00 · Em estoque</p>
                 </div>
               </div>
             </div>
@@ -274,7 +313,7 @@
               <div class="icon-wrapper">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 3H3"/><path d="M21 21H3"/><path d="M12 7v10"/><path d="M8 11l4-4 4 4"/><path d="M8 13l4 4 4-4"/></svg>
               </div>
-              <h3 class="section-title">Tokens de espaçamento</h3>
+              <h3 class="section-title" data-i18n="hipromedSpacingTitle">Tokens de espaçamento</h3>
             </div>
             <div class="case-spacing-stack">
               <div class="case-spacing-row">
@@ -314,13 +353,12 @@
       </div>
     </section>
 
-
     <section class="case-section">
       <div class="container-padrao">
 
-        <span class="case-eyebrow">Telas Principais</span>
-        <h2 class="case-heading">Jornada do usuário B2C</h2>
-        <p class="description" style="font-size:1rem">
+        <span class="case-eyebrow" data-i18n="hipromedScreensEyebrow">Telas Principais</span>
+        <h2 class="case-heading" data-i18n="hipromedScreensHeading">Jornada do usuário B2C</h2>
+        <p class="description" style="font-size:1rem" data-i18n="hipromedScreensLead">
           Do descobrimento do produto até o checkout — cada tela projetada para gerar confiança e facilitar a decisão de compra.
         </p>
 
@@ -333,8 +371,8 @@
             </div>
             <div class="card-description">
               <span class="category">Homepage</span>
-              <h4>Vitrine & Credibilidade</h4>
-              <p>Apresentação dos produtos, categorias, ofertas e parceiros para construir autoridade de marca.</p>
+              <h4 data-i18n="hipromedScreen1Title">Vitrine & Credibilidade</h4>
+              <p data-i18n="hipromedScreen1Desc">Apresentação dos produtos, categorias, ofertas e parceiros para construir autoridade de marca.</p>
             </div>
           </div>
 
@@ -343,31 +381,30 @@
               <img src="/assets/catalogo-hipromed3x.png" class="imagem-do-projeto" alt="Catálogo Hipromed">
             </div>
             <div class="card-description">
-              <span class="category">Catálogo</span>
-              <h4>Organização & Navegação</h4>
-              <p>Facilitação na busca e descoberta de produtos através de uma estrutura de categorias e filtros intuitivos.</p>
+              <span class="category" data-i18n="hipromedScreen2Cat">Catálogo</span>
+              <h4 data-i18n="hipromedScreen2Title">Organização & Navegação</h4>
+              <p data-i18n="hipromedScreen2Desc">Facilitação na busca e descoberta de produtos através de uma estrutura de categorias e filtros intuitivos.</p>
             </div>
           </div>
         </div>
 
         <details class="full-home-disclosure">
-          <summary>Mostrar home completa <span aria-hidden="true">＋</span></summary>
-          <button class="full-home-zoom-trigger" type="button" aria-label="Ampliar imagem da home completa da Hipromed">
+          <summary data-i18n="hipromedDisclosureSummary">Mostrar home completa <span aria-hidden="true">＋</span></summary>
+          <button class="full-home-zoom-trigger" type="button" aria-label="Ampliar imagem da home completa da Hipromed" data-i18n-aria="hipromedZoomAria">
             <img src="/assets/hipromed.com.br_ 1.png" alt="Página inicial completa do e-commerce Hipromed" loading="lazy">
-            <span class="full-home-zoom-hint">Clique na imagem para ampliar</span>
+            <span class="full-home-zoom-hint" data-i18n="hipromedZoomHint">Clique na imagem para ampliar</span>
           </button>
-          <button class="full-home-hide" type="button">Esconder home completa</button>
+          <button class="full-home-hide" type="button" data-i18n="hipromedHideFullHome">Esconder home completa</button>
         </details>
       </div>
     </section>
 
-
     <section class="case-section">
       <div class="container-padrao">
 
-        <span class="case-eyebrow">Resultados & Impacto</span>
-        <h2 class="case-heading">O que o projeto entregou</h2>
-        <p class="description" style="font-size:1rem">
+        <span class="case-eyebrow" data-i18n="hipromedResultsEyebrow">Resultados & Impacto</span>
+        <h2 class="case-heading" data-i18n="hipromedResultsHeading">O que o projeto entregou</h2>
+        <p class="description" style="font-size:1rem" data-i18n="hipromedResultsLead">
           Além da interface, o projeto representou uma mudança estratégica real no modelo de negócio.
         </p>
 
@@ -375,53 +412,52 @@
 
           <div class="card case-result-card">
             <div class="case-result-number">0→1</div>
-            <h4 style="margin-bottom:8px">Presença digital criada do zero</h4>
-            <p class="description" style="margin:0">A empresa passou de zero presença online para um e-commerce com identidade de marca coesa e jornada de compra completa.</p>
+            <h4 style="margin-bottom:8px" data-i18n="hipromedRes1Title">Presença digital criada do zero</h4>
+            <p class="description" style="margin:0" data-i18n="hipromedRes1Desc">A empresa passou de zero presença online para um e-commerce com identidade de marca coesa e jornada de compra completa.</p>
           </div>
 
           <div class="card case-result-card">
             <div class="case-result-number">B2C</div>
-            <h4 style="margin-bottom:8px">Novo canal de vendas ativado</h4>
-            <p class="description" style="margin:0">O projeto viabilizou a expansão para um segmento completamente novo: consumidores finais e profissionais autônomos da saúde.</p>
+            <h4 style="margin-bottom:8px" data-i18n="hipromedRes2Title">Novo canal de vendas ativado</h4>
+            <p class="description" style="margin:0" data-i18n="hipromedRes2Desc">O projeto viabilizou a expansão para um segmento completamente novo: consumidores finais e profissionais autônomos da saúde.</p>
           </div>
 
           <div class="card case-result-card">
             <div class="case-result-number">↑↑</div>
-            <h4 style="margin-bottom:8px">Credibilidade construída</h4>
-            <p class="description" style="margin:0">Parceiros visíveis, depoimentos e design consistente construíram autoridade de marca para o novo público.</p>
+            <h4 style="margin-bottom:8px" data-i18n="hipromedRes3Title">Credibilidade construída</h4>
+            <p class="description" style="margin:0" data-i18n="hipromedRes3Desc">Parceiros visíveis, depoimentos e design consistente construíram autoridade de marca para o novo público.</p>
           </div>
 
           <div class="card case-result-card">
             <div class="case-result-number">15%</div>
-            <h4 style="margin-bottom:8px">Redução de desistências</h4>
-            <p class="description" style="margin:0">A jornada de compra otimizada e a interface intuitiva contribuíram para uma redução de cerca de 15% de desistências no processo de checkout.</p>
+            <h4 style="margin-bottom:8px" data-i18n="hipromedRes4Title">Redução de desistências</h4>
+            <p class="description" style="margin:0" data-i18n="hipromedRes4Desc">A jornada de compra otimizada e a interface intuitiva contribuíram para uma redução de cerca de 15% de desistências no processo de checkout.</p>
           </div>
 
           <div class="card case-result-card">
             <div class="case-result-number">40%</div>
-            <h4 style="margin-bottom:8px">Melhoria no autoatendimento</h4>
-            <p class="description" style="margin:0">Implementação de recursos de suporte ao cliente automatizado que melhoraram a experiência do usuário e reduziram o tempo de resposta em cerca de 40%.</p>
+            <h4 style="margin-bottom:8px" data-i18n="hipromedRes5Title">Melhoria no autoatendimento</h4>
+            <p class="description" style="margin:0" data-i18n="hipromedRes5Desc">Implementação de recursos de suporte ao cliente automatizado que melhoraram a experiência do usuário e reduziram o tempo de resposta em cerca de 40%.</p>
           </div>
 
           <div class="card case-result-card">
             <div class="case-result-number">20%</div>
-            <h4 style="margin-bottom:8px">Geração de leads</h4>
-            <p class="description" style="margin:0">Implementação de estratégias de captação de leads que resultaram em um aumento de 20% no número de leads qualificados.</p>
+            <h4 style="margin-bottom:8px" data-i18n="hipromedRes6Title">Geração de leads</h4>
+            <p class="description" style="margin:0" data-i18n="hipromedRes6Desc">Implementação de estratégias de captação de leads que resultaram em um aumento de 20% no número de leads qualificados.</p>
           </div>
 
         </div>
       </div>
     </section>
 
-
     <section class="case-section">
       <div class="container-padrao">
         <div class="case-learnings-grid">
 
           <div class="case-learnings-sticky">
-            <span class="case-eyebrow">Aprendizados</span>
-            <h2 class="case-heading">O que levei desse projeto</h2>
-            <p class="description" style="font-size:1rem">
+            <span class="case-eyebrow" data-i18n="hipromedLearningsEyebrow">Aprendizados</span>
+            <h2 class="case-heading" data-i18n="hipromedLearningsHeading">O que levei desse projeto</h2>
+            <p class="description" style="font-size:1rem" data-i18n="hipromedLearningsLead">
               Um projeto do zero com stakeholder único exige tanto habilidade técnica quanto consultoria estratégica.
             </p>
           </div>
@@ -431,32 +467,32 @@
             <div class="card case-learning-card">
               <span class="case-learning-num">01</span>
               <div>
-                <h4 style="margin-bottom:4px">Design e negócio são inseparáveis</h4>
-                <p class="description" style="margin:0">Entender o modelo B2B da empresa foi essencial para projetar uma interface B2C que refletisse credibilidade. O contexto de negócio moldou cada decisão de design.</p>
+                <h4 style="margin-bottom:4px" data-i18n="hipromedLearn1Title">Design e negócio são inseparáveis</h4>
+                <p class="description" style="margin:0" data-i18n="hipromedLearn1Desc">Entender o modelo B2B da empresa foi essencial para projetar uma interface B2C que refletisse credibilidade. O contexto de negócio moldou cada decisão de design.</p>
               </div>
             </div>
 
             <div class="card case-learning-card">
               <span class="case-learning-num">02</span>
               <div>
-                <h4 style="margin-bottom:4px">Confiança é o principal ativo no setor de saúde</h4>
-                <p class="description" style="margin:0">Produtos médicos exigem sinais claros de credibilidade — parceiros, certificações e uma linguagem visual que transmita seriedade técnica.</p>
+                <h4 style="margin-bottom:4px" data-i18n="hipromedLearn2Title">Confiança é o principal ativo no setor de saúde</h4>
+                <p class="description" style="margin:0" data-i18n="hipromedLearn2Desc">Produtos médicos exigem sinais claros de credibilidade — parceiros, certificações e uma linguagem visual que transmita seriedade técnica.</p>
               </div>
             </div>
 
             <div class="card case-learning-card">
               <span class="case-learning-num">03</span>
               <div>
-                <h4 style="margin-bottom:4px">Métricas como estratégia</h4>
-                <p class="description" style="margin:0">Entendi a importância de analisar indicadores de performance para validar hipóteses e otimizar a experiência com foco em conversão e sucesso do negócio.</p>
+                <h4 style="margin-bottom:4px" data-i18n="hipromedLearn3Title">Métricas como estratégia</h4>
+                <p class="description" style="margin:0" data-i18n="hipromedLearn3Desc">Entendi a importância de analisar indicadores de performance para validar hipóteses e otimizar a experiência com foco em conversão e sucesso do negócio.</p>
               </div>
             </div>
 
             <div class="card case-learning-card">
               <span class="case-learning-num">04</span>
               <div>
-                <h4 style="margin-bottom:4px">O stakeholder como parceiro de produto</h4>
-                <p class="description" style="margin:0">Com um único interlocutor, precisei fazer as perguntas certas para extrair requisitos que nem sempre estavam explícitos.</p>
+                <h4 style="margin-bottom:4px" data-i18n="hipromedLearn4Title">O stakeholder como parceiro de produto</h4>
+                <p class="description" style="margin:0" data-i18n="hipromedLearn4Desc">Com um único interlocutor, precisei fazer as perguntas certas para extrair requisitos que nem sempre estavam explícitos.</p>
               </div>
             </div>
 
@@ -467,24 +503,23 @@
 
   </main>
 
-  <a class="case-back-to-top" href="#topo" aria-label="Voltar ao topo do projeto" title="Voltar ao topo">
+  <a class="case-back-to-top" href="#topo" aria-label="Voltar ao topo do projeto" title="Voltar ao topo" data-i18n-aria="backToTopAria" data-i18n-title="backToTopTitle">
     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6" /></svg>
   </a>
 
-  <dialog class="full-home-lightbox" aria-label="Imagem ampliada da home completa da Hipromed">
-    <button class="full-home-lightbox-close" type="button" aria-label="Fechar imagem ampliada">Fechar <span aria-hidden="true">×</span></button>
+  <dialog class="full-home-lightbox" aria-label="Imagem ampliada da home completa da Hipromed" data-i18n-aria="hipromedLightboxAria">
+    <button class="full-home-lightbox-close" type="button" aria-label="Fechar imagem ampliada" data-i18n="lightboxClose">Fechar <span aria-hidden="true">×</span></button>
     <img src="assets/hipromed.com.br_ 1.png" alt="Página inicial completa do e-commerce Hipromed, ampliada">
   </dialog>
 
-
   <footer class="contact" id="contato" aria-labelledby="contact-title">
-    <div class="contact-top"><span class="eyebrow">Contato</span><span class="availability"><span class="availability-dot"></span> Aberto a boas conversas</span></div>
-    <h2 id="contact-title">Vamos conversar<br><em>sobre seu projeto?</em></h2>
+    <div class="contact-top"><span class="eyebrow" data-i18n="caseContactEyebrow">Contato</span><span class="availability" data-i18n="caseContactAvailability"><span class="availability-dot"></span> Aberto a boas conversas</span></div>
+    <h2 id="contact-title" data-i18n="caseContactTitle">Vamos conversar<br><em>sobre seu projeto?</em></h2>
     <a class="contact-email" href="mailto:viniam_leite@hotmail.com">viniam_leite@hotmail.com <span aria-hidden="true">↗</span></a>
-    <div class="contact-bottom"><a href="tel:+5531982142508">+55 31 98214-2508</a><div class="social-links"><a href="https://www.linkedin.com/in/viniazere/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.behance.net/vinciuazeredo" target="_blank" rel="noreferrer">Behance ↗</a><a href="https://www.instagram.com/viniciusmlft/" target="_blank" rel="noreferrer">Instagram ↗</a></div></div>
+    <div class="contact-bottom"><a href="https://wa.me/5531982142508?text=Ol%C3%A1%2C%20vim%20pelo%20do%20seu%20site%2C%20podemos%20conversar%3F" target="_blank" rel="noreferrer">+55 31 98214-2508</a><div class="social-links"><a href="https://www.linkedin.com/in/viniazere/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.behance.net/vinciuazeredo" target="_blank" rel="noreferrer">Behance ↗</a><a href="https://www.instagram.com/viniciusmlft/" target="_blank" rel="noreferrer">Instagram ↗</a></div></div>
   </footer>
 
-  <footer class="site-footer"><a class="wordmark" href="index.html#topo"><span class="wordmark-name">Vinícius Azeredo</span></a><span>© <span id="year">2026</span> Vinícius Azeredo</span><a href="#topo">Voltar ao início ↑</a></footer>
+  <footer class="site-footer"><a class="wordmark" href="index.html#topo"><span class="wordmark-name">Vinícius Azeredo</span></a><span>© <span id="year">2026</span> Vinícius Azeredo</span><a href="#topo" data-i18n="footerBackToTop">Voltar ao início ↑</a></footer>
   <script src="main.js" defer></script>
 
 </body>

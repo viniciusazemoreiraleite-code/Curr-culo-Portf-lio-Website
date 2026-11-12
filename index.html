@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3f1e8">
-  <meta name="description" content="Portfólio de Vinícius Azeredo, designer de interfaces e web designer. Projetos de e-commerce, experiência digital e identidade visual.">
-  <title>Vinícius Azeredo — Designer de interfaces</title>
+  <meta name="description" content="Portfólio de Vinícius Azeredo, designer de interfaces e web designer. Projetos de e-commerce, experiência digital e identidade visual." data-description-pt="Portfólio de Vinícius Azeredo, designer de interfaces e web designer. Projetos de e-commerce, experiência digital e identidade visual." data-description-en="Portfolio of Vinícius Azeredo, interface and web designer. E-commerce, digital experience, and visual identity projects.">
+  <title data-title-pt="Vinícius Azeredo — Designer de interfaces" data-title-en="Vinícius Azeredo — Digital & Interface Designer">Vinícius Azeredo — Designer de interfaces</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -18,21 +18,65 @@
     <a class="wordmark" href="#topo" aria-label="Vinícius Azeredo, início"><span class="wordmark-name">Vinícius Azeredo</span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
     <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
-      <a href="#sobre">Sobre</a>
-      <a href="#experiencia">Experiência</a>
-      <a href="#projetos">Projetos</a>
-      <a class="nav-contact" href="https://wa.me/5531982142508?text=Ol%C3%A1%2C%20vim%20pelo%20do%20seu%20site%2C%20podemos%20conversar%3F" target="_blank" rel="noreferrer">Vamos conversar <span aria-hidden="true">↗</span></a>
+      <a href="#sobre" data-i18n="navAbout">Sobre</a>
+      <a href="#experiencia" data-i18n="navExperience">Experiência</a>
+      <a href="#projetos" data-i18n="navProjects">Projetos</a>
+      <a class="nav-contact" href="https://wa.me/5531982142508?text=Ol%C3%A1%2C%20vim%20pelo%20do%20seu%20site%2C%20podemos%20conversar%3F" target="_blank" rel="noreferrer"><span data-i18n="navContact">Vamos conversar</span> <span aria-hidden="true">↗</span></a>
+      <div class="language-switch" role="group" aria-label="Idioma / Language">
+        <button class="language-option is-active" type="button" data-language="pt" aria-pressed="true" aria-label="Português">
+          <svg class="flag-icon" viewBox="0 0 32 32" width="16" height="16" aria-hidden="true" focusable="false">
+            <clipPath id="flag-br-clip">
+              <circle cx="16" cy="16" r="16"/>
+            </clipPath>
+            <g clip-path="url(#flag-br-clip)">
+              <rect width="32" height="32" fill="#009b3a"/>
+              <polygon points="16,5.2 27.2,16 16,26.8 4.8,16" fill="#fedf00"/>
+              <circle cx="16" cy="16" r="6.2" fill="#002776"/>
+              <path d="M10.1,17 C12.2,14.3 19.8,14.3 21.9,17" fill="none" stroke="#ffffff" stroke-width="1.25" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <span>Português</span>
+        </button>
+        <button class="language-option" type="button" data-language="en" aria-pressed="false" aria-label="English">
+          <svg class="flag-icon" viewBox="0 0 32 32" width="16" height="16" aria-hidden="true" focusable="false">
+            <clipPath id="flag-us-clip">
+              <circle cx="16" cy="16" r="16"/>
+            </clipPath>
+            <g clip-path="url(#flag-us-clip)">
+              <rect width="32" height="32" fill="#ffffff"/>
+              <path d="M0,0H32V2.46H0ZM0,4.92H32V7.38H0ZM0,9.84H32V12.3H0ZM0,14.76H32V17.22H0ZM0,19.68H32V22.14H0ZM0,24.6H32V27.06H0ZM0,29.52H32V32H0Z" fill="#b22234"/>
+              <rect width="14" height="17.22" fill="#3c3b6e"/>
+              <g fill="#ffffff">
+                <circle cx="3" cy="3.2" r="0.9"/>
+                <circle cx="7" cy="3.2" r="0.9"/>
+                <circle cx="11" cy="3.2" r="0.9"/>
+                <circle cx="5" cy="6.2" r="0.9"/>
+                <circle cx="9" cy="6.2" r="0.9"/>
+                <circle cx="3" cy="9.2" r="0.9"/>
+                <circle cx="7" cy="9.2" r="0.9"/>
+                <circle cx="11" cy="9.2" r="0.9"/>
+                <circle cx="5" cy="12.2" r="0.9"/>
+                <circle cx="9" cy="12.2" r="0.9"/>
+                <circle cx="3" cy="15.2" r="0.9"/>
+                <circle cx="7" cy="15.2" r="0.9"/>
+                <circle cx="11" cy="15.2" r="0.9"/>
+              </g>
+            </g>
+          </svg>
+          <span>English</span>
+        </button>
+      </div>
     </nav>
   </header>
 
   <main id="conteudo">
     <section class="hero section-wrap" id="topo" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="availability-dot"></span> Portfólio · Web design & UI/UX</p>
-        <h1 id="hero-title"><span class="hero-title-top">Design, intenção</span><span class="hero-title-ampersand" aria-hidden="true">&</span><em>Experiências que<br>conectam.</em></h1>
+        <p class="eyebrow"><span class="availability-dot"></span> <span data-i18n="heroEyebrow">Portfólio · Web design & UI/UX</span></p>
+        <h1 id="hero-title"><span class="hero-title-top" data-i18n="heroTop">Design, intenção</span><span class="hero-title-ampersand" aria-hidden="true">&</span><em data-i18n="heroEm">Experiências que<br>conectam.</em></h1>
         <div class="hero-lower">
-          <p>Sou Vinícius, designer digital. Junto estratégia, identidade e interface para criar experiências claras, úteis e feitas para pessoas.</p>
-          <a class="text-link" href="#projetos">Conheça meu trabalho <span aria-hidden="true">↓</span></a>
+          <p data-i18n="heroIntro">Sou Vinícius, designer digital. Junto estratégia, identidade e interface para criar experiências claras, úteis e feitas para pessoas.</p>
+          <a class="text-link" href="#projetos"><span data-i18n="heroLink">Conheça meu trabalho</span> <span aria-hidden="true">↓</span></a>
         </div>
       </div>
       <div class="hero-gallery" aria-label="Uma seleção de projetos de Vinícius">
