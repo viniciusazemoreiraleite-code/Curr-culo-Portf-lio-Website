@@ -4,7 +4,7 @@ const siteHeader = document.querySelector('.site-header');
 
 const translations = {
   navAbout: 'About', navExperience: 'Experience', navProjects: 'Projects', navContact: 'Let’s talk',
-  heroEyebrow: 'Portfolio · Web design & UI/UX', heroTop: 'Purpose-driven design', heroEm: 'Experiences that<br>connect.',
+  heroEyebrow: 'Portfolio · Web design & UI/UX', heroTop: 'Design with intent', heroEm: 'Experiences that<br>connect.',
   heroIntro: 'I’m Vinícius, a digital designer. I bring strategy, identity, and interface together to create clear, useful experiences made for people.',
   heroLink: 'Explore my work',
   '.gallery-index': 'Belo Horizonte, Brazil <span>·</span> Available for new projects',
@@ -24,7 +24,7 @@ const translations = {
   '.practice-lead': 'A strong visual foundation, curiosity about technology, and care at every step of the experience.',
   '.education > .eyebrow': 'Education', '.courses-panel > .eyebrow': 'Courses', '.skills-panel > .eyebrow': 'Areas of focus', '.tools-label': 'Tools',
   '.skill-list span:last-child': 'Artificial intelligence',
-  '.projects .section-kicker span:nth-child(2)': 'Selected work', '#projects-title': 'Projects with <em>purpose.</em>',
+  '.projects .section-kicker span:nth-child(2)': 'Selected work', '#projects-title': '<em>Purpose-driven</em> projects.',
   '.projects-heading p': 'A selection of work across digital experiences, e-commerce, and identity.',
   '.desktop-link': 'More projects on Behance <span aria-hidden="true">↗</span>', '.mobile-link': 'More projects on Behance <span aria-hidden="true">↗</span>',
   '.project-visual::after': 'View project',
