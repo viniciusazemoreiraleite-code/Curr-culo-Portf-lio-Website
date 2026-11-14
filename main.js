@@ -4,7 +4,7 @@ const siteHeader = document.querySelector('.site-header');
 
 const translations = {
   navAbout: 'About', navExperience: 'Experience', navProjects: 'Projects', navContact: 'Let’s talk',
-  heroEyebrow: 'Portfolio · Web design & UI/UX', heroTop: 'Design with intent', heroEm: 'Experiences that<br>connect.',
+  heroEyebrow: 'Portfolio · Web design & UI/UX', heroTop: 'Purpose-driven design', heroEm: 'Experiences that<br>connect.',
   heroIntro: 'I’m Vinícius, a digital designer. I bring strategy, identity, and interface together to create clear, useful experiences made for people.',
   heroLink: 'Explore my work',
   '.gallery-index': 'Belo Horizonte, Brazil <span>·</span> Available for new projects',
