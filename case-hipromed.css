@@ -618,9 +618,6 @@
 .case-delay-3 { animation-delay: 0.4s; }
 .case-delay-4 { animation-delay: 0.55s; }
 
-/* Shared case-page foundation. Load after portfolio.css for every case page.
-   Reuse .case-page, .case-hero, .case-section, .case-meta-strip and
-   .case-back-to-top; keep project-specific additions in case-[slug].css. */
 :root {
   --deep-moss-green: var(--moss);
   --sage-green: var(--muted);

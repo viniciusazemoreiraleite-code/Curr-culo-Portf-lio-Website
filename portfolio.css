@@ -252,7 +252,6 @@ h1 em, h2 em { font-weight: 400; color: var(--moss); }
   .site-footer .wordmark-name { font-size: 17px; }
 }
 
-/* --- 3D Perspective Tilt Card Effect (Desktop) --- */
 @media (hover: hover) and (pointer: fine) and (min-width: 769px) {
   #projetos .project-grid {
     perspective: 1200px;

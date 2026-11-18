@@ -46,9 +46,6 @@ const translations = {
   '.course-list li:nth-child(1) span': 'WordPress as a CMS',
   '.course-list li:nth-child(2) span': 'Front-End (HTML and CSS)',
   '.tools-list': 'UI/UX Design · Graphic Design · Web Design · Front-End',
-  '.skill-list span:nth-child(5)': 'Adobe Photoshop',
-  '.skill-list span:nth-child(6)': 'Adobe Illustrator',
-  '.skill-list span:nth-child(7)': 'Adobe Premiere',
   '.timeline-item:nth-child(3) .timeline-role h3': 'Graphic Designer',
   '.timeline-item:nth-child(4) .timeline-role h3': 'Graphic Designer',
   '.project-card:nth-child(1) .project-meta span:first-child': 'Social media · Art direction',
@@ -59,7 +56,6 @@ const translations = {
   '.project-card:nth-child(6) .project-meta span:first-child': 'Landing page · Web',
   '.project-card:nth-child(7) .project-meta span:first-child': 'Landing page · Web',
 
-  // Shared Case Study Keys
   skipLink: 'Skip to content',
   breadcrumbPortfolio: 'Portfolio',
   btnBackPortfolio: '← Back to portfolio',
@@ -82,7 +78,7 @@ const translations = {
   lightboxPrev: '← Previous',
   lightboxNext: 'Next →',
 
-  // Case Study: Henrietta's Cafe
+  //henrietta
   henriettasHeroCat: 'Web Design',
   henriettasHeroDesc: 'A welcoming digital presence to introduce the café, highlight its products, and connect customers with online ordering options.',
   henriettasMetaRole: 'UI Designer & Web Designer',
@@ -176,7 +172,7 @@ const translations = {
   henriettasLearning4Title: 'AI as an enabling tool',
   henriettasLearning4Desc: 'AI tools supported implementation exploration and coding, keeping the focus squarely on interface craft and results.',
 
-  // Case Study: Hipromed
+  //hipromed
   hipromedHeroCat: 'E-Commerce · Healthcare',
   hipromedHeroTitle: 'Hipromed<br>Medical Supplies',
   hipromedHeroDesc: 'Digital expansion of a B2B company into the B2C market — designing the purchase journey, visual identity, and online credibility from scratch for a new audience.',
@@ -255,7 +251,7 @@ const translations = {
   hipromedLearn4Title: 'The stakeholder as product partner',
   hipromedLearn4Desc: 'With a single key interlocutor, asking the right questions was essential to uncover requirements that weren’t always explicit.',
 
-  // Case Study: SevenX Gaming
+  //sevenx
   sevenxHeroCat: 'Art direction · Social media · iGaming',
   sevenxHeroDesc: 'Visual communications for two entertainment brands — Bullsbet and Jogão — across social channels and on-platform touchpoints.',
   sevenxMetaRole: 'Graphic Designer',
@@ -357,7 +353,8 @@ const translations = {
   sevenxJogaoBan2Desc: 'Invites users to support and vote for Jogão in the Reclame Aqui 2026 Awards.',
   sevenxLightboxAria: 'Enlarged artwork preview',
 
-  // Case Study: Zestly
+
+  //zestly
   zestlyHeroCat: 'UX/UI Design · B2B Retail · Web',
   zestlyHeroTitle: 'Zestly<br>Retail Intelligence',
   zestlyHeroDesc: 'Turning retail data into smart decisions — a landing page crafted to present a data intelligence solution and generate business opportunities.',
@@ -700,7 +697,6 @@ if (particleContext) {
   document.addEventListener('visibilitychange', startParticleField);
 }
 
-/* --- 3D Perspective Tilt Card Effect (Desktop) --- */
 const initTiltCards = () => {
   const cards = document.querySelectorAll('#projetos .project-card');
   if (!cards.length) return;
