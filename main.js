@@ -489,6 +489,10 @@ const setLanguage = (language, animate = true) => {
     const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
     menuToggle.setAttribute('aria-label', isOpen ? (isEnglish ? 'Close menu' : 'Fechar menu') : (isEnglish ? 'Open menu' : 'Abrir menu'));
   }
+  if (mobileLangTrigger) {
+    mobileLangTrigger.setAttribute('aria-label', isEnglish ? 'Change language' : 'Alterar idioma');
+    mobileLangTrigger.setAttribute('title', isEnglish ? 'Change language' : 'Alterar idioma');
+  }
   document.body.classList.toggle('is-english', isEnglish);
   languageButtons.forEach((button) => {
     const active = button.dataset.language === language;
@@ -504,13 +508,47 @@ const setLanguage = (language, animate = true) => {
   try { localStorage.setItem('portfolio-language', language); } catch {}
 };
 
+const mobileLangDropdown = document.querySelector('.mobile-lang-dropdown');
+const mobileLangTrigger = document.querySelector('.mobile-lang-trigger');
+
 languageButtons.forEach((button) => button.addEventListener('click', () => {
   setLanguage(button.dataset.language);
   const isEn = button.dataset.language === 'en';
   menuToggle?.setAttribute('aria-expanded', 'false');
   menuToggle?.setAttribute('aria-label', isEn ? 'Open menu' : 'Abrir menu');
   siteNav?.classList.remove('is-open');
+  mobileLangDropdown?.classList.remove('is-open');
+  mobileLangTrigger?.setAttribute('aria-expanded', 'false');
 }));
+
+if (mobileLangTrigger && mobileLangDropdown) {
+  mobileLangTrigger.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const isOpen = mobileLangDropdown.classList.toggle('is-open');
+    mobileLangTrigger.setAttribute('aria-expanded', String(isOpen));
+    if (isOpen && siteNav?.classList.contains('is-open')) {
+      siteNav.classList.remove('is-open');
+      menuToggle?.setAttribute('aria-expanded', 'false');
+      const isEn = document.documentElement.lang === 'en';
+      menuToggle?.setAttribute('aria-label', isEn ? 'Open menu' : 'Abrir menu');
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!mobileLangDropdown.contains(event.target)) {
+      mobileLangDropdown.classList.remove('is-open');
+      mobileLangTrigger.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && mobileLangDropdown.classList.contains('is-open')) {
+      mobileLangDropdown.classList.remove('is-open');
+      mobileLangTrigger.setAttribute('aria-expanded', 'false');
+      mobileLangTrigger.focus();
+    }
+  });
+}
 let initialLanguage = 'pt';
 try { initialLanguage = localStorage.getItem('portfolio-language') === 'en' ? 'en' : 'pt'; } catch {}
 setLanguage(initialLanguage, false);
@@ -526,6 +564,8 @@ if (siteHeader) {
 
 if (menuToggle && siteNav) {
   menuToggle.addEventListener('click', () => {
+    mobileLangDropdown?.classList.remove('is-open');
+    mobileLangTrigger?.setAttribute('aria-expanded', 'false');
     const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
     const isEn = document.documentElement.lang === 'en';
     menuToggle.setAttribute('aria-expanded', String(!isOpen));

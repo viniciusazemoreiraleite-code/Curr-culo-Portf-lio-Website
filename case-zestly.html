@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
@@ -12,14 +12,106 @@
   <link rel="stylesheet" href="case-zestly.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Albert+Sans:wght@400;500;600;700&family=Montserrat+Alternates:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Albert+Sans:wght@400;500;600;700&family=Montserrat+Alternates:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Albert+Sans:wght@400;500;600;700&family=Montserrat+Alternates:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Albert+Sans:wght@400;500;600;700&family=Montserrat+Alternates:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"></noscript>
 </head>
 <body>
   <a class="skip-link" href="#conteudo" data-i18n="skipLink">Pular para o conteúdo</a>
 
   <header class="site-header">
     <a class="wordmark" href="index.html#topo" aria-label="Vinícius Azeredo, início"><span class="wordmark-name">Vinícius Azeredo</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
+    <div class="header-actions">
+      <div class="mobile-lang-dropdown">
+        <button class="mobile-lang-trigger" type="button" aria-expanded="false" aria-label="Alterar idioma" title="Alterar idioma">
+          <span class="mobile-lang-flag mobile-lang-flag-pt" aria-hidden="true">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">
+              <clipPath id="flag-br-clip-mob">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-br-clip-mob)">
+                <rect width="32" height="32" fill="#009b3a"/>
+                <polygon points="16,5.2 27.2,16 16,26.8 4.8,16" fill="#fedf00"/>
+                <circle cx="16" cy="16" r="6.2" fill="#002776"/>
+                <path d="M10.1,17 C12.2,14.3 19.8,14.3 21.9,17" fill="none" stroke="#ffffff" stroke-width="1.25" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </span>
+          <span class="mobile-lang-flag mobile-lang-flag-en" aria-hidden="true">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">
+              <clipPath id="flag-us-clip-mob">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-us-clip-mob)">
+                <rect width="32" height="32" fill="#ffffff"/>
+                <path d="M0,0H32V2.46H0ZM0,4.92H32V7.38H0ZM0,9.84H32V12.3H0ZM0,14.76H32V17.22H0ZM0,19.68H32V22.14H0ZM0,24.6H32V27.06H0ZM0,29.52H32V32H0Z" fill="#b22234"/>
+                <rect width="14" height="17.22" fill="#3c3b6e"/>
+                <g fill="#ffffff">
+                  <circle cx="3" cy="3.2" r="0.9"/>
+                  <circle cx="7" cy="3.2" r="0.9"/>
+                  <circle cx="11" cy="3.2" r="0.9"/>
+                  <circle cx="5" cy="6.2" r="0.9"/>
+                  <circle cx="9" cy="6.2" r="0.9"/>
+                  <circle cx="3" cy="9.2" r="0.9"/>
+                  <circle cx="7" cy="9.2" r="0.9"/>
+                  <circle cx="11" cy="9.2" r="0.9"/>
+                  <circle cx="5" cy="12.2" r="0.9"/>
+                  <circle cx="9" cy="12.2" r="0.9"/>
+                  <circle cx="3" cy="15.2" r="0.9"/>
+                  <circle cx="7" cy="15.2" r="0.9"/>
+                  <circle cx="11" cy="15.2" r="0.9"/>
+                </g>
+              </g>
+            </svg>
+          </span>
+        </button>
+        <div class="mobile-lang-menu" role="menu">
+          <button class="language-option is-active" type="button" data-language="pt" aria-pressed="true" aria-label="Português">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="18" height="18" aria-hidden="true" focusable="false">
+              <clipPath id="flag-br-clip-mobmenu">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-br-clip-mobmenu)">
+                <rect width="32" height="32" fill="#009b3a"/>
+                <polygon points="16,5.2 27.2,16 16,26.8 4.8,16" fill="#fedf00"/>
+                <circle cx="16" cy="16" r="6.2" fill="#002776"/>
+                <path d="M10.1,17 C12.2,14.3 19.8,14.3 21.9,17" fill="none" stroke="#ffffff" stroke-width="1.25" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <span>Português</span>
+          </button>
+          <button class="language-option" type="button" data-language="en" aria-pressed="false" aria-label="English">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="18" height="18" aria-hidden="true" focusable="false">
+              <clipPath id="flag-us-clip-mobmenu">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-us-clip-mobmenu)">
+                <rect width="32" height="32" fill="#ffffff"/>
+                <path d="M0,0H32V2.46H0ZM0,4.92H32V7.38H0ZM0,9.84H32V12.3H0ZM0,14.76H32V17.22H0ZM0,19.68H32V22.14H0ZM0,24.6H32V27.06H0ZM0,29.52H32V32H0Z" fill="#b22234"/>
+                <rect width="14" height="17.22" fill="#3c3b6e"/>
+                <g fill="#ffffff">
+                  <circle cx="3" cy="3.2" r="0.9"/>
+                  <circle cx="7" cy="3.2" r="0.9"/>
+                  <circle cx="11" cy="3.2" r="0.9"/>
+                  <circle cx="5" cy="6.2" r="0.9"/>
+                  <circle cx="9" cy="6.2" r="0.9"/>
+                  <circle cx="3" cy="9.2" r="0.9"/>
+                  <circle cx="7" cy="9.2" r="0.9"/>
+                  <circle cx="11" cy="9.2" r="0.9"/>
+                  <circle cx="5" cy="12.2" r="0.9"/>
+                  <circle cx="9" cy="12.2" r="0.9"/>
+                  <circle cx="3" cy="15.2" r="0.9"/>
+                  <circle cx="7" cy="15.2" r="0.9"/>
+                  <circle cx="11" cy="15.2" r="0.9"/>
+                </g>
+              </g>
+            </svg>
+            <span>English</span>
+          </button>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
+    </div>
     <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
       <a href="index.html#sobre" data-i18n="navAbout">Sobre</a>
       <a href="index.html#experiencia" data-i18n="navExperience">Experiência</a>
@@ -84,7 +176,7 @@
             <div class="hero-actions"><a href="index.html#projetos" class="btn-outline" data-i18n="btnBackPortfolio">← Voltar ao portfólio</a></div>
           </div>
           <div class="case-zestly-hero-visual">
-            <img src="assets/capa-zestly.png" alt="Capa do projeto Zestly, com a interface da plataforma de inteligência de dados para o varejo" fetchpriority="high">
+            <img src="assets/capa-zestly.webp" alt="Capa do projeto Zestly, com a interface da plataforma de inteligência de dados para o varejo" fetchpriority="high">
           </div>
         </div>
       </div>
@@ -111,7 +203,7 @@
             <p class="description" data-i18n="zestlyS01P2">Com isso, as equipes podem identificar padrões, compreender a demanda dos consumidores e tomar decisões mais estratégicas durante as temporadas de vendas.</p>
           </div>
           <div class="case-zestly-summary card">
-            <img src="assets/Zestly-100.jpg.jpeg" alt="Imagem Zestly-100 do projeto Zestly" loading="lazy">
+            <img src="assets/Zestly-100.jpg.webp" alt="Imagem Zestly-100 do projeto Zestly" loading="lazy">
           </div>
         </div>
       </div>
@@ -192,7 +284,7 @@
         <div class="case-screens-grid case-zestly-screens-grid">
           <article class="card-hipromed-case">
             <div class="project-image-wrapper">
-              <img src="assets/Autumn peak.png" class="imagem-do-projeto" alt="Seção Autumn clarity da landing page Zestly, apresentando planejamento para a temporada de pico com imagem de abóboras e produtos sazonais" loading="lazy">
+              <img src="assets/Autumn peak.webp" class="imagem-do-projeto" alt="Seção Autumn clarity da landing page Zestly, apresentando planejamento para a temporada de pico com imagem de abóboras e produtos sazonais" loading="lazy">
             </div>
             <div class="card-description">
               <span class="category" data-i18n="zestlyScreen1Cat">Planejamento sazonal</span>
@@ -203,7 +295,7 @@
 
           <article class="card-hipromed-case">
             <div class="project-image-wrapper">
-              <img src="assets/zestlylp.framer.website_.png" class="imagem-do-projeto" alt="Landing page da Zestly com formulário para iniciar teste gratuito e depoimentos de clientes" loading="lazy">
+              <img src="assets/zestlylp.framer.website_.webp" class="imagem-do-projeto" alt="Landing page da Zestly com formulário para iniciar teste gratuito e depoimentos de clientes" loading="lazy">
             </div>
             <div class="card-description">
               <span class="category" data-i18n="zestlyScreen2Cat">Conversão e confiança</span>

@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
@@ -7,26 +7,26 @@
   <meta name="description" content="Portfólio de Vinícius Azeredo, designer de interfaces e web designer. Projetos de e-commerce, experiência digital e identidade visual." data-description-pt="Portfólio de Vinícius Azeredo, designer de interfaces e web designer. Projetos de e-commerce, experiência digital e identidade visual." data-description-en="Portfolio of Vinícius Azeredo, interface and web designer. E-commerce, digital experience, and visual identity projects.">
   <title data-title-pt="Vinícius Azeredo — Designer de interfaces" data-title-en="Vinícius Azeredo — Digital & Interface Designer">Vinícius Azeredo — Designer de interfaces</title>
   
-  <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://curriculoportfolioviniciusazeredo.vercel.app/">
   <meta property="og:title" content="Vinícius Azeredo — Designer de interfaces">
   <meta property="og:description" content="Portfólio de Vinícius Azeredo, designer de interfaces e web designer. Projetos de e-commerce, experiência digital e identidade visual.">
-  <meta property="og:image" content="https://curriculoportfolioviniciusazeredo.vercel.app/assets/Open%20Graph%20website.png">
+  <meta property="og:image" content="https://curriculoportfolioviniciusazeredo.vercel.app/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Vinícius Azeredo">
 
-  <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://curriculoportfolioviniciusazeredo.vercel.app/">
   <meta name="twitter:title" content="Vinícius Azeredo — Designer de interfaces">
   <meta name="twitter:description" content="Portfólio de Vinícius Azeredo, designer de interfaces e web designer. Projetos de e-commerce, experiência digital e identidade visual.">
-  <meta name="twitter:image" content="https://curriculoportfolioviniciusazeredo.vercel.app/assets/Open%20Graph%20website.png">
+  <meta name="twitter:image" content="https://curriculoportfolioviniciusazeredo.vercel.app/assets/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"></noscript>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="portfolio.css">
 </head>
@@ -34,7 +34,97 @@
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <header class="site-header">
     <a class="wordmark" href="#topo" aria-label="Vinícius Azeredo, início"><span class="wordmark-name">Vinícius Azeredo</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
+    <div class="header-actions">
+      <div class="mobile-lang-dropdown">
+        <button class="mobile-lang-trigger" type="button" aria-expanded="false" aria-label="Alterar idioma" title="Alterar idioma">
+          <span class="mobile-lang-flag mobile-lang-flag-pt" aria-hidden="true">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">
+              <clipPath id="flag-br-clip-mob">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-br-clip-mob)">
+                <rect width="32" height="32" fill="#009b3a"/>
+                <polygon points="16,5.2 27.2,16 16,26.8 4.8,16" fill="#fedf00"/>
+                <circle cx="16" cy="16" r="6.2" fill="#002776"/>
+                <path d="M10.1,17 C12.2,14.3 19.8,14.3 21.9,17" fill="none" stroke="#ffffff" stroke-width="1.25" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </span>
+          <span class="mobile-lang-flag mobile-lang-flag-en" aria-hidden="true">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">
+              <clipPath id="flag-us-clip-mob">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-us-clip-mob)">
+                <rect width="32" height="32" fill="#ffffff"/>
+                <path d="M0,0H32V2.46H0ZM0,4.92H32V7.38H0ZM0,9.84H32V12.3H0ZM0,14.76H32V17.22H0ZM0,19.68H32V22.14H0ZM0,24.6H32V27.06H0ZM0,29.52H32V32H0Z" fill="#b22234"/>
+                <rect width="14" height="17.22" fill="#3c3b6e"/>
+                <g fill="#ffffff">
+                  <circle cx="3" cy="3.2" r="0.9"/>
+                  <circle cx="7" cy="3.2" r="0.9"/>
+                  <circle cx="11" cy="3.2" r="0.9"/>
+                  <circle cx="5" cy="6.2" r="0.9"/>
+                  <circle cx="9" cy="6.2" r="0.9"/>
+                  <circle cx="3" cy="9.2" r="0.9"/>
+                  <circle cx="7" cy="9.2" r="0.9"/>
+                  <circle cx="11" cy="9.2" r="0.9"/>
+                  <circle cx="5" cy="12.2" r="0.9"/>
+                  <circle cx="9" cy="12.2" r="0.9"/>
+                  <circle cx="3" cy="15.2" r="0.9"/>
+                  <circle cx="7" cy="15.2" r="0.9"/>
+                  <circle cx="11" cy="15.2" r="0.9"/>
+                </g>
+              </g>
+            </svg>
+          </span>
+        </button>
+        <div class="mobile-lang-menu" role="menu">
+          <button class="language-option is-active" type="button" data-language="pt" aria-pressed="true" aria-label="Português">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="18" height="18" aria-hidden="true" focusable="false">
+              <clipPath id="flag-br-clip-mobmenu">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-br-clip-mobmenu)">
+                <rect width="32" height="32" fill="#009b3a"/>
+                <polygon points="16,5.2 27.2,16 16,26.8 4.8,16" fill="#fedf00"/>
+                <circle cx="16" cy="16" r="6.2" fill="#002776"/>
+                <path d="M10.1,17 C12.2,14.3 19.8,14.3 21.9,17" fill="none" stroke="#ffffff" stroke-width="1.25" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <span>Português</span>
+          </button>
+          <button class="language-option" type="button" data-language="en" aria-pressed="false" aria-label="English">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="18" height="18" aria-hidden="true" focusable="false">
+              <clipPath id="flag-us-clip-mobmenu">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-us-clip-mobmenu)">
+                <rect width="32" height="32" fill="#ffffff"/>
+                <path d="M0,0H32V2.46H0ZM0,4.92H32V7.38H0ZM0,9.84H32V12.3H0ZM0,14.76H32V17.22H0ZM0,19.68H32V22.14H0ZM0,24.6H32V27.06H0ZM0,29.52H32V32H0Z" fill="#b22234"/>
+                <rect width="14" height="17.22" fill="#3c3b6e"/>
+                <g fill="#ffffff">
+                  <circle cx="3" cy="3.2" r="0.9"/>
+                  <circle cx="7" cy="3.2" r="0.9"/>
+                  <circle cx="11" cy="3.2" r="0.9"/>
+                  <circle cx="5" cy="6.2" r="0.9"/>
+                  <circle cx="9" cy="6.2" r="0.9"/>
+                  <circle cx="3" cy="9.2" r="0.9"/>
+                  <circle cx="7" cy="9.2" r="0.9"/>
+                  <circle cx="11" cy="9.2" r="0.9"/>
+                  <circle cx="5" cy="12.2" r="0.9"/>
+                  <circle cx="9" cy="12.2" r="0.9"/>
+                  <circle cx="3" cy="15.2" r="0.9"/>
+                  <circle cx="7" cy="15.2" r="0.9"/>
+                  <circle cx="11" cy="15.2" r="0.9"/>
+                </g>
+              </g>
+            </svg>
+            <span>English</span>
+          </button>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
+    </div>
     <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
       <a href="#sobre" data-i18n="navAbout">Sobre</a>
       <a href="#experiencia" data-i18n="navExperience">Experiência</a>
@@ -98,10 +188,10 @@
         </div>
       </div>
       <div class="hero-gallery" aria-label="Uma seleção de projetos de Vinícius">
-        <figure class="gallery-work"><img src="assets/Hipromed-100.jpg.jpeg" alt="Campanha Black Friday Hipromed" fetchpriority="high"></figure>
-        <figure class="gallery-work gallery-work-wide"><img src="assets/sevenxthumb.png" alt="Projeto Redes sociais SevenX Gaming"></figure>
-        <figure class="gallery-work"><img src="assets/Metropax-100.jpg.jpeg" alt="Landing page desenvolvida para Metropax"></figure>
-        <figure class="gallery-work gallery-work-last"><img src="assets/Zestly-100.jpg.jpeg" alt="Landing page Zestly"></figure>
+        <figure class="gallery-work"><img src="assets/Hipromed-100.jpg.webp" alt="Campanha Black Friday Hipromed" fetchpriority="high"></figure>
+        <figure class="gallery-work gallery-work-wide"><img src="assets/sevenxthumb.webp" alt="Projeto Redes sociais SevenX Gaming"></figure>
+        <figure class="gallery-work"><img src="assets/Metropax-100.jpg.webp" alt="Landing page desenvolvida para Metropax"></figure>
+        <figure class="gallery-work gallery-work-last"><img src="assets/Zestly-100.jpg.webp" alt="Landing page Zestly"></figure>
         <span class="gallery-index">Belo Horizonte, Brasil <span>·</span> Disponível para novos projetos</span>
       </div>
     </section>
@@ -109,13 +199,13 @@
     <section class="about section-wrap section-rule" id="sobre" aria-labelledby="about-title">
       <div class="section-kicker"><span>01</span><span>Um pouco sobre mim</span></div>
       <div class="about-grid">
-        <div class="about-image"><img src="assets/Vinícius_Azeredo_Img.png" alt="Vinícius Azeredo" loading="lazy"><span class="image-caption">Design com clareza, cuidado e propósito.</span></div>
+        <div class="about-image"><img src="assets/Vinícius_Azeredo_Img.webp" alt="Vinícius Azeredo" loading="lazy"><span class="image-caption">Design com clareza, cuidado e propósito.</span></div>
         <div class="about-copy">
           <h2 id="about-title">Olhar atento.<br><em>Design que faz sentido.</em></h2>
           <p>Sou Web Designer com experiência na criação e implementação de soluções digitais. Trabalho entre UX, UI, identidade visual e desenvolvimento de páginas e sempre aproximo as necessidades das pessoas dos objetivos do negócio.</p>
           <p>Ao longo da minha trajetória, participei de projetos de e-commerce, landing pages e comunicação digital; desde a pesquisa e prototipagem até a construção da interface.</p>
           <div class="about-facts"><div><strong>5 anos</strong><span>em design digital</span></div><div><strong>UI + UX</strong><span>estratégia e interface</span></div><div><strong>Web</strong><span>design e implementação</span></div></div>
-          <a class="text-link" href="/assets/Currículo Vinícius Azeredo.pdf" download>Baixar currículo <span aria-hidden="true">↗</span></a>
+          <a class="text-link resume-download" href="/assets/Currículo_Vinícius_Azeredo.pdf" download="Currículo_Vinícius_Azeredo.pdf" data-href-pt="/assets/Currículo_Vinícius_Azeredo.pdf" data-download-pt="Currículo_Vinícius_Azeredo.pdf" data-href-en="/assets/Resume_Vinícius_Azeredo.pdf" data-download-en="Resume_Vinícius_Azeredo.pdf">Baixar currículo <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -134,7 +224,7 @@
     <section class="practice section-wrap" aria-labelledby="practice-title">
       <div class="section-kicker"><span>03</span><span>Formação & prática</span></div>
       <div class="practice-grid">
-        <div class="practice-intro"><h2 class="practice-title" id="practice-title"  style="font-size: 68px;">Áreas de atuação <em>e domínio.</em></h2><p class="practice-lead">Uma base visual sólida, curiosidade por tecnologia e atenção a cada etapa da experiência.</p></div>
+        <div class="practice-intro"><h2 class="practice-title" id="practice-title">Áreas de atuação <em>e domínio.</em></h2><p class="practice-lead">Uma base visual sólida, curiosidade por tecnologia e atenção a cada etapa da experiência.</p></div>
         <div class="practice-education"><div class="education"><span class="eyebrow">Formação</span><h3>Design Gráfico</h3><p>Centro Universitário UNA <span>·</span> 2021</p></div><div class="courses-panel"><span class="eyebrow">Cursos</span><ul class="course-list"><li><span>WordPress como CMS</span><time datetime="2025">2025</time></li><li><span>Front-End (HTML e CSS)</span><time datetime="2025">2025</time></li><li><span>UI Design</span><time datetime="2025">2024</time></li><li><span>UX &amp; Design Thinking</span><time datetime="2025">2024</time></li></ul></div></div>
         <div class="skills-panel"><span class="eyebrow">Áreas de atuação</span><p class="tools-list">UI/UX Design · Design Gráfico · Web Design · Front-End</p><span class="eyebrow tools-label">Ferramentas</span><div class="skill-list"><span>Figma</span><span>MCP</span><span>HTML/CSS</span><span>Google Analytics</span><span>Microsoft Clarity</span><span>Adobe Photoshop</span><span>Adobe Illustrator</span><span>Adobe Premiere</span><span>Canva</span><span>Affinity</span><span>Vibe Coding</span><span>Inteligência artificial</span></div></div>
       </div>
@@ -144,12 +234,12 @@
       <div class="section-kicker"><span>04</span><span>Trabalho selecionado</span></div>
       <div class="projects-heading"><div><h2 id="projects-title">Projetos com <em> propósito.</em></h2><p>Uma seleção de trabalhos em experiência digital, e-commerce e identidade.</p></div><a class="text-link desktop-link" href="https://www.behance.net/vinciuazeredo" target="_blank" rel="noreferrer">Mais projetos no Behance <span aria-hidden="true">↗</span></a></div>
       <div class="project-grid">
-        <a class="project-card" href="case-sevenx.html"><div class="project-visual"><img src="assets/sevenxthumb.png" alt="Projeto de redes sociais da SevenX Gaming" loading="lazy"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-meta"><span>Redes sociais · Direção de arte</span><span>01 / 07</span></div><div class="project-card-content"><h3>SevenX Gaming</h3><p>Comunicação digital para Bullsbet e Jogão.</p></div></a>
+        <a class="project-card" href="case-sevenx.html"><div class="project-visual"><img src="assets/sevenxthumb.webp" alt="Projeto de redes sociais da SevenX Gaming" loading="lazy"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-meta"><span>Redes sociais · Direção de arte</span><span>01 / 07</span></div><div class="project-card-content"><h3>SevenX Gaming</h3><p>Comunicação digital para Bullsbet e Jogão.</p></div></a>
         <a class="project-card" href="case-henriettas.html"><div class="project-visual project-visual-henriettas"><div class="project-visual-henriettas-mark" aria-hidden="true"><span>✳</span><strong>Henrietta's</strong><small>CAFE</small><i></i><small class="project-visual-henriettas-tagline">Coffee · Bakery · Good days</small></div><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-meta"><span>Web Design · Front-End</span><span>02 / 07</span></div><div class="project-card-content"><h3>Henrietta's Cafe</h3><p>Presença digital acolhedora para uma cafeteria local.</p></div></a>
-        <a class="project-card" href="case-hipromed.html"><div class="project-visual"><img src="/assets/Hipromed-100.jpg.jpeg" alt="E-commerce Hipromed Produtos Médicos" loading="lazy"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-meta"><span>E-commerce · UX/UI</span><span>03 / 07</span></div><div class="project-card-content"><h3>Hipromed Produtos Médicos</h3><p>Uma nova experiência de compra digital para produtos médicos.</p></div></a>
-        <a class="project-card" href="case-zestly.html"><div class="project-visual"><img src="/assets/Zestly-100.jpg.jpeg" alt="Landing page Zestly" loading="lazy"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-meta"><span>Landing page · Web</span><span>05 / 07</span></div><div class="project-card-content"><h3>Zestly</h3><p>Página de apresentação dos serviços da Zestly.</p></div></a>
-        <a class="project-card" href="https://www.behance.net/gallery/206770361/Landing-Page-Metropet" target="_blank" rel="noreferrer"><div class="project-visual"><img src="assets/capa-landing-page-metropet.png" alt="Landing page Metropet" loading="lazy"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-meta"><span>Landing page · Web</span><span>06 / 07</span></div><div class="project-card-content"><h3>Metropet</h3><p>Landing page para apresentação dos serviços da marca.</p></div></a>
-        <a class="project-card" href="https://www.behance.net/gallery/206768361/Landing-Page-Planos-Metropax" target="_blank" rel="noreferrer"><div class="project-visual"><img src="/assets/Metropax-100.jpg.jpeg" alt="Landing page Metropax" loading="lazy"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-meta"><span>Landing page · Web</span><span>07 / 07</span></div><div class="project-card-content"><h3>Planos Metropax</h3><p>Apresentação digital dos planos e serviços da Metropax.</p></div></a>
+        <a class="project-card" href="case-hipromed.html"><div class="project-visual"><img src="/assets/Hipromed-100.jpg.webp" alt="E-commerce Hipromed Produtos Médicos" loading="lazy"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-meta"><span>E-commerce · UX/UI</span><span>03 / 07</span></div><div class="project-card-content"><h3>Hipromed Produtos Médicos</h3><p>Uma nova experiência de compra digital para produtos médicos.</p></div></a>
+        <a class="project-card" href="case-zestly.html"><div class="project-visual"><img src="/assets/Zestly-100.jpg.webp" alt="Landing page Zestly" loading="lazy"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-meta"><span>Landing page · Web</span><span>05 / 07</span></div><div class="project-card-content"><h3>Zestly</h3><p>Página de apresentação dos serviços da Zestly.</p></div></a>
+        <a class="project-card" href="https://www.behance.net/gallery/206770361/Landing-Page-Metropet" target="_blank" rel="noreferrer"><div class="project-visual"><img src="assets/capa-landing-page-metropet.webp" alt="Landing page Metropet" loading="lazy"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-meta"><span>Landing page · Web</span><span>06 / 07</span></div><div class="project-card-content"><h3>Metropet</h3><p>Landing page para apresentação dos serviços da marca.</p></div></a>
+        <a class="project-card" href="https://www.behance.net/gallery/206768361/Landing-Page-Planos-Metropax" target="_blank" rel="noreferrer"><div class="project-visual"><img src="/assets/Metropax-100.jpg.webp" alt="Landing page Metropax" loading="lazy"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-meta"><span>Landing page · Web</span><span>07 / 07</span></div><div class="project-card-content"><h3>Planos Metropax</h3><p>Apresentação digital dos planos e serviços da Metropax.</p></div></a>
       </div>
       <a class="text-link mobile-link" href="https://www.behance.net/vinciuazeredo" target="_blank" rel="noreferrer">Mais projetos no Behance <span aria-hidden="true">↗</span></a>
     </section>

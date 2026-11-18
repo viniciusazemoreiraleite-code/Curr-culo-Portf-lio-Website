@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
@@ -12,14 +12,106 @@
   <link rel="stylesheet" href="case-henriettas.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"></noscript>
 </head>
 <body>
   <a class="skip-link" href="#conteudo" data-i18n="skipLink">Pular para o conteúdo</a>
 
   <header class="site-header">
     <a class="wordmark" href="index.html#topo" aria-label="Vinícius Azeredo, início"><span class="wordmark-name">Vinícius Azeredo</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
+    <div class="header-actions">
+      <div class="mobile-lang-dropdown">
+        <button class="mobile-lang-trigger" type="button" aria-expanded="false" aria-label="Alterar idioma" title="Alterar idioma">
+          <span class="mobile-lang-flag mobile-lang-flag-pt" aria-hidden="true">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">
+              <clipPath id="flag-br-clip-mob">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-br-clip-mob)">
+                <rect width="32" height="32" fill="#009b3a"/>
+                <polygon points="16,5.2 27.2,16 16,26.8 4.8,16" fill="#fedf00"/>
+                <circle cx="16" cy="16" r="6.2" fill="#002776"/>
+                <path d="M10.1,17 C12.2,14.3 19.8,14.3 21.9,17" fill="none" stroke="#ffffff" stroke-width="1.25" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </span>
+          <span class="mobile-lang-flag mobile-lang-flag-en" aria-hidden="true">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">
+              <clipPath id="flag-us-clip-mob">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-us-clip-mob)">
+                <rect width="32" height="32" fill="#ffffff"/>
+                <path d="M0,0H32V2.46H0ZM0,4.92H32V7.38H0ZM0,9.84H32V12.3H0ZM0,14.76H32V17.22H0ZM0,19.68H32V22.14H0ZM0,24.6H32V27.06H0ZM0,29.52H32V32H0Z" fill="#b22234"/>
+                <rect width="14" height="17.22" fill="#3c3b6e"/>
+                <g fill="#ffffff">
+                  <circle cx="3" cy="3.2" r="0.9"/>
+                  <circle cx="7" cy="3.2" r="0.9"/>
+                  <circle cx="11" cy="3.2" r="0.9"/>
+                  <circle cx="5" cy="6.2" r="0.9"/>
+                  <circle cx="9" cy="6.2" r="0.9"/>
+                  <circle cx="3" cy="9.2" r="0.9"/>
+                  <circle cx="7" cy="9.2" r="0.9"/>
+                  <circle cx="11" cy="9.2" r="0.9"/>
+                  <circle cx="5" cy="12.2" r="0.9"/>
+                  <circle cx="9" cy="12.2" r="0.9"/>
+                  <circle cx="3" cy="15.2" r="0.9"/>
+                  <circle cx="7" cy="15.2" r="0.9"/>
+                  <circle cx="11" cy="15.2" r="0.9"/>
+                </g>
+              </g>
+            </svg>
+          </span>
+        </button>
+        <div class="mobile-lang-menu" role="menu">
+          <button class="language-option is-active" type="button" data-language="pt" aria-pressed="true" aria-label="Português">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="18" height="18" aria-hidden="true" focusable="false">
+              <clipPath id="flag-br-clip-mobmenu">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-br-clip-mobmenu)">
+                <rect width="32" height="32" fill="#009b3a"/>
+                <polygon points="16,5.2 27.2,16 16,26.8 4.8,16" fill="#fedf00"/>
+                <circle cx="16" cy="16" r="6.2" fill="#002776"/>
+                <path d="M10.1,17 C12.2,14.3 19.8,14.3 21.9,17" fill="none" stroke="#ffffff" stroke-width="1.25" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <span>Português</span>
+          </button>
+          <button class="language-option" type="button" data-language="en" aria-pressed="false" aria-label="English">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="18" height="18" aria-hidden="true" focusable="false">
+              <clipPath id="flag-us-clip-mobmenu">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-us-clip-mobmenu)">
+                <rect width="32" height="32" fill="#ffffff"/>
+                <path d="M0,0H32V2.46H0ZM0,4.92H32V7.38H0ZM0,9.84H32V12.3H0ZM0,14.76H32V17.22H0ZM0,19.68H32V22.14H0ZM0,24.6H32V27.06H0ZM0,29.52H32V32H0Z" fill="#b22234"/>
+                <rect width="14" height="17.22" fill="#3c3b6e"/>
+                <g fill="#ffffff">
+                  <circle cx="3" cy="3.2" r="0.9"/>
+                  <circle cx="7" cy="3.2" r="0.9"/>
+                  <circle cx="11" cy="3.2" r="0.9"/>
+                  <circle cx="5" cy="6.2" r="0.9"/>
+                  <circle cx="9" cy="6.2" r="0.9"/>
+                  <circle cx="3" cy="9.2" r="0.9"/>
+                  <circle cx="7" cy="9.2" r="0.9"/>
+                  <circle cx="11" cy="9.2" r="0.9"/>
+                  <circle cx="5" cy="12.2" r="0.9"/>
+                  <circle cx="9" cy="12.2" r="0.9"/>
+                  <circle cx="3" cy="15.2" r="0.9"/>
+                  <circle cx="7" cy="15.2" r="0.9"/>
+                  <circle cx="11" cy="15.2" r="0.9"/>
+                </g>
+              </g>
+            </svg>
+            <span>English</span>
+          </button>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
+    </div>
     <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
       <a href="index.html#sobre" data-i18n="navAbout">Sobre</a>
       <a href="index.html#experiencia" data-i18n="navExperience">Experiência</a>
@@ -177,15 +269,15 @@
         <p class="description case-henriettas-section-lead" data-i18n="henriettasS05Lead">A organização do conteúdo conduz da descoberta da cafeteria às informações práticas e às opções de atendimento.</p>
         <div class="case-screens-grid case-henriettas-screen-grid">
           <article class="card-hipromed-case">
-            <div class="project-image-wrapper"><img src="assets/henrietta-s.vercel.app_.png" class="imagem-do-projeto" alt="Página inicial da Henrietta's Cafe, com apresentação da cafeteria, chamada para pedidos e informações de localização e horário" loading="lazy"></div>
+            <div class="project-image-wrapper"><img src="assets/henrietta-s.vercel.app_.webp" class="imagem-do-projeto" alt="Página inicial da Henrietta's Cafe, com apresentação da cafeteria, chamada para pedidos e informações de localização e horário" loading="lazy"></div>
             <div class="card-description"><span class="category" data-i18n="henriettasScreen1Cat">Marca e primeira impressão</span><h4 data-i18n="henriettasScreen1Title">Bem-vindo à Henrietta's</h4><p data-i18n="henriettasScreen1Desc">A abertura combina a identidade da cafeteria com acesso rápido ao cardápio, aos pedidos online e às informações para visitar o espaço.</p></div>
           </article>
           <article class="card-hipromed-case">
-            <div class="project-image-wrapper"><img src="assets/henrietta-s.vercel.app_order.png" class="imagem-do-projeto" alt="Seção What We Serve do site, apresentando categorias de produtos como panificados, cafés e bebidas, e opções leves" loading="lazy"></div>
+            <div class="project-image-wrapper"><img src="assets/henrietta-s.vercel.app_order.webp" class="imagem-do-projeto" alt="Seção What We Serve do site, apresentando categorias de produtos como panificados, cafés e bebidas, e opções leves" loading="lazy"></div>
             <div class="card-description"><span class="category" data-i18n="henriettasScreen2Cat">Produtos e categorias</span><h4 data-i18n="henriettasScreen2Title">Um cardápio fácil de explorar</h4><p data-i18n="henriettasScreen2Desc">Panificados, cafés e bebidas, e opções leves aparecem em categorias visuais que ajudam o visitante a conhecer a variedade do menu.</p></div>
           </article>
           <article class="card-hipromed-case">
-            <div class="project-image-wrapper"><img src="assets/henrietta-s.vercel.app_delivery.png" class="imagem-do-projeto" alt="Seção de pedidos online da Henrietta's Cafe com benefícios do pedido antecipado e apresentação do serviço de catering" loading="lazy"></div>
+            <div class="project-image-wrapper"><img src="assets/henrietta-s.vercel.app_delivery.webp" class="imagem-do-projeto" alt="Seção de pedidos online da Henrietta's Cafe com benefícios do pedido antecipado e apresentação do serviço de catering" loading="lazy"></div>
             <div class="card-description"><span class="category" data-i18n="henriettasScreen3Cat">Pedidos e serviços</span><h4 data-i18n="henriettasScreen3Title">Peça online e evite a fila</h4><p data-i18n="henriettasScreen3Desc">A seção explica como fazer pedidos com antecedência e apresenta o catering para cafés da manhã e eventos de empresas.</p></div>
           </article>
         </div>

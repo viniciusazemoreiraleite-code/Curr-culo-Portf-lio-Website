@@ -1,8 +1,5 @@
-/* Importação da fonte Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
 :root {
-  --font-family: 'Poppins', sans-serif;
+  --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   
   /* Portfolio Custom Colors */
   --deep-moss-green: #3d5a3d;

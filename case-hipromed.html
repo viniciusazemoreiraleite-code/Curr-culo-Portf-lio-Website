@@ -11,14 +11,106 @@
   <link rel="stylesheet" href="case-hipromed.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600&display=swap"></noscript>
 </head>
 <body>
   <a class="skip-link" href="#conteudo" data-i18n="skipLink">Pular para o conteúdo</a>
 
   <header class="site-header">
     <a class="wordmark" href="index.html#topo" aria-label="Vinícius Azeredo, início"><span class="wordmark-name">Vinícius Azeredo</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
+    <div class="header-actions">
+      <div class="mobile-lang-dropdown">
+        <button class="mobile-lang-trigger" type="button" aria-expanded="false" aria-label="Alterar idioma" title="Alterar idioma">
+          <span class="mobile-lang-flag mobile-lang-flag-pt" aria-hidden="true">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">
+              <clipPath id="flag-br-clip-mob">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-br-clip-mob)">
+                <rect width="32" height="32" fill="#009b3a"/>
+                <polygon points="16,5.2 27.2,16 16,26.8 4.8,16" fill="#fedf00"/>
+                <circle cx="16" cy="16" r="6.2" fill="#002776"/>
+                <path d="M10.1,17 C12.2,14.3 19.8,14.3 21.9,17" fill="none" stroke="#ffffff" stroke-width="1.25" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </span>
+          <span class="mobile-lang-flag mobile-lang-flag-en" aria-hidden="true">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">
+              <clipPath id="flag-us-clip-mob">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-us-clip-mob)">
+                <rect width="32" height="32" fill="#ffffff"/>
+                <path d="M0,0H32V2.46H0ZM0,4.92H32V7.38H0ZM0,9.84H32V12.3H0ZM0,14.76H32V17.22H0ZM0,19.68H32V22.14H0ZM0,24.6H32V27.06H0ZM0,29.52H32V32H0Z" fill="#b22234"/>
+                <rect width="14" height="17.22" fill="#3c3b6e"/>
+                <g fill="#ffffff">
+                  <circle cx="3" cy="3.2" r="0.9"/>
+                  <circle cx="7" cy="3.2" r="0.9"/>
+                  <circle cx="11" cy="3.2" r="0.9"/>
+                  <circle cx="5" cy="6.2" r="0.9"/>
+                  <circle cx="9" cy="6.2" r="0.9"/>
+                  <circle cx="3" cy="9.2" r="0.9"/>
+                  <circle cx="7" cy="9.2" r="0.9"/>
+                  <circle cx="11" cy="9.2" r="0.9"/>
+                  <circle cx="5" cy="12.2" r="0.9"/>
+                  <circle cx="9" cy="12.2" r="0.9"/>
+                  <circle cx="3" cy="15.2" r="0.9"/>
+                  <circle cx="7" cy="15.2" r="0.9"/>
+                  <circle cx="11" cy="15.2" r="0.9"/>
+                </g>
+              </g>
+            </svg>
+          </span>
+        </button>
+        <div class="mobile-lang-menu" role="menu">
+          <button class="language-option is-active" type="button" data-language="pt" aria-pressed="true" aria-label="Português">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="18" height="18" aria-hidden="true" focusable="false">
+              <clipPath id="flag-br-clip-mobmenu">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-br-clip-mobmenu)">
+                <rect width="32" height="32" fill="#009b3a"/>
+                <polygon points="16,5.2 27.2,16 16,26.8 4.8,16" fill="#fedf00"/>
+                <circle cx="16" cy="16" r="6.2" fill="#002776"/>
+                <path d="M10.1,17 C12.2,14.3 19.8,14.3 21.9,17" fill="none" stroke="#ffffff" stroke-width="1.25" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <span>Português</span>
+          </button>
+          <button class="language-option" type="button" data-language="en" aria-pressed="false" aria-label="English">
+            <svg class="flag-icon" viewBox="0 0 32 32" width="18" height="18" aria-hidden="true" focusable="false">
+              <clipPath id="flag-us-clip-mobmenu">
+                <circle cx="16" cy="16" r="16"/>
+              </clipPath>
+              <g clip-path="url(#flag-us-clip-mobmenu)">
+                <rect width="32" height="32" fill="#ffffff"/>
+                <path d="M0,0H32V2.46H0ZM0,4.92H32V7.38H0ZM0,9.84H32V12.3H0ZM0,14.76H32V17.22H0ZM0,19.68H32V22.14H0ZM0,24.6H32V27.06H0ZM0,29.52H32V32H0Z" fill="#b22234"/>
+                <rect width="14" height="17.22" fill="#3c3b6e"/>
+                <g fill="#ffffff">
+                  <circle cx="3" cy="3.2" r="0.9"/>
+                  <circle cx="7" cy="3.2" r="0.9"/>
+                  <circle cx="11" cy="3.2" r="0.9"/>
+                  <circle cx="5" cy="6.2" r="0.9"/>
+                  <circle cx="9" cy="6.2" r="0.9"/>
+                  <circle cx="3" cy="9.2" r="0.9"/>
+                  <circle cx="7" cy="9.2" r="0.9"/>
+                  <circle cx="11" cy="9.2" r="0.9"/>
+                  <circle cx="5" cy="12.2" r="0.9"/>
+                  <circle cx="9" cy="12.2" r="0.9"/>
+                  <circle cx="3" cy="15.2" r="0.9"/>
+                  <circle cx="7" cy="15.2" r="0.9"/>
+                  <circle cx="11" cy="15.2" r="0.9"/>
+                </g>
+              </g>
+            </svg>
+            <span>English</span>
+          </button>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
+    </div>
     <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
       <a href="index.html#sobre" data-i18n="navAbout">Sobre</a>
       <a href="index.html#experiencia" data-i18n="navExperience">Experiência</a>
@@ -104,7 +196,7 @@
           
           <div class="thumb-hipromed case-fade case-delay-5">
             <div class="project-image-wrapper">
-                <img src="/assets/Homepage_hipromed.png" class="thumb-do-projeto" alt="Homepage Hipromed">
+                <img src="/assets/Homepage_hipromed.webp" class="thumb-do-projeto" alt="Homepage Hipromed">
             </div>
           </div>
         </div>
@@ -367,7 +459,7 @@
           
           <div class="card-hipromed-case">
             <div class="project-image-wrapper">
-              <img src="/assets/hipromed.com.br_ 1.png" class="imagem-do-projeto" alt="Homepage Hipromed">
+              <img src="/assets/hipromed.com.br_ 1.webp" class="imagem-do-projeto" alt="Homepage Hipromed">
             </div>
             <div class="card-description">
               <span class="category">Homepage</span>
@@ -378,7 +470,7 @@
 
           <div class="card-hipromed-case">
             <div class="project-image-wrapper">
-              <img src="/assets/catalogo-hipromed3x.png" class="imagem-do-projeto" alt="Catálogo Hipromed">
+              <img src="/assets/catalogo-hipromed3x.webp" class="imagem-do-projeto" alt="Catálogo Hipromed">
             </div>
             <div class="card-description">
               <span class="category" data-i18n="hipromedScreen2Cat">Catálogo</span>
@@ -391,7 +483,7 @@
         <details class="full-home-disclosure">
           <summary data-i18n="hipromedDisclosureSummary">Mostrar home completa <span aria-hidden="true">＋</span></summary>
           <button class="full-home-zoom-trigger" type="button" aria-label="Ampliar imagem da home completa da Hipromed" data-i18n-aria="hipromedZoomAria">
-            <img src="/assets/hipromed.com.br_ 1.png" alt="Página inicial completa do e-commerce Hipromed" loading="lazy">
+            <img src="/assets/hipromed.com.br_ 1.webp" alt="Página inicial completa do e-commerce Hipromed" loading="lazy">
             <span class="full-home-zoom-hint" data-i18n="hipromedZoomHint">Clique na imagem para ampliar</span>
           </button>
           <button class="full-home-hide" type="button" data-i18n="hipromedHideFullHome">Esconder home completa</button>
@@ -509,7 +601,7 @@
 
   <dialog class="full-home-lightbox" aria-label="Imagem ampliada da home completa da Hipromed" data-i18n-aria="hipromedLightboxAria">
     <button class="full-home-lightbox-close" type="button" aria-label="Fechar imagem ampliada" data-i18n="lightboxClose">Fechar <span aria-hidden="true">×</span></button>
-    <img src="assets/hipromed.com.br_ 1.png" alt="Página inicial completa do e-commerce Hipromed, ampliada">
+    <img src="assets/hipromed.com.br_ 1.webp" alt="Página inicial completa do e-commerce Hipromed, ampliada">
   </dialog>
 
   <footer class="contact" id="contato" aria-labelledby="contact-title">
