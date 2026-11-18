@@ -37,7 +37,7 @@ a { color: inherit; }
   isolation: isolate;
   justify-self: end;
   padding: 11px 22px;
-  border: 0.1px solid var(--moss);
+  border: 0.1px solid var(--line);
   border-radius: 99px;
   background: transparent;
   color: var(--moss);
