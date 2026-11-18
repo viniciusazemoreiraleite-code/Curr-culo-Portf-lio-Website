@@ -495,6 +495,12 @@ const setLanguage = (language, animate = true) => {
     button.classList.toggle('is-active', active);
     button.setAttribute('aria-pressed', String(active));
   });
+  document.querySelectorAll('.resume-download').forEach((link) => {
+    const href = isEnglish ? link.dataset.hrefEn : link.dataset.hrefPt;
+    const dl   = isEnglish ? link.dataset.downloadEn : link.dataset.downloadPt;
+    if (href) link.href = href;
+    if (dl)   link.setAttribute('download', dl);
+  });
   try { localStorage.setItem('portfolio-language', language); } catch {}
 };
 
