@@ -1,0 +1,2037 @@
+{
+ "start": "2026-11-19T18:31:48.230Z",
+ "round": 2,
+ "idle": 0,
+ "errors": 0,
+ "status": "fail",
+ "history": [
+  {
+   "at": "2026-11-19T18:45:49.959Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 52,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-19T18:47:54.878Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 53,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "index.html",
+  "url": null,
+  "root": null,
+  "kind": "service",
+  "category": "design portfolio",
+  "primary": "View selected projects",
+  "rounds": 3,
+  "start": "2026-11-19T18:31:48.230Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "4efe17edadfa314d:da39a3ee",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "4efe17edadfa314d",
+ "page": "index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "hero-fill",
+    "where": "section#projetos \"Projetos com propósito.\"",
+    "msg": "the next section shows on the first screen: it starts at 779px on a 900px screen (the hero ends at 752px)",
+    "fix": "let the hero fill the first screen alone (min-height: 100svh, less above it): nothing of the next section on load",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "hero-fill"
+    ],
+    "wheres": [
+     "section#projetos \"Projetos com propósito.\""
+    ]
+   },
+   {
+    "check": "scroll-reveal",
+    "where": "section#contato \"02 · CONTATO Aberto a boas conversas Tem\"",
+    "msg": "starts \"opacity\" (0.7 s) the moment it is scrolled into view (an IntersectionObserver)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "scroll-reveal"
+    ],
+    "wheres": [
+     "section#contato \"02 · CONTATO Aberto a boas conversas Tem\""
+    ]
+   },
+   {
+    "check": "pinned",
+    "where": "section#projetos > div.projects-rail > div.projects-sticky \"Projetos com propósito. Uma seleção de t\"",
+    "msg": "held on screen for 1.6 screens of scroll (position: sticky) while the page moves on",
+    "fix": "let the section scroll with the page",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "pinned"
+    ],
+    "wheres": [
+     "section#projetos > div.projects-rail > div.projects-sticky \"Projetos com propósito. Uma seleção de t\""
+    ]
+   },
+   {
+    "check": "text-only",
+    "where": "section#topo \"Design, intenção & Experiências que cone\"",
+    "msg": "the section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)",
+    "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-only"
+    ],
+    "wheres": [
+     "section#topo \"Design, intenção & Experiências que cone\""
+    ]
+   },
+   {
+    "check": "text-only",
+    "where": "section#contato \"Tem um projeto em mente? Vamos conversar\"",
+    "msg": "the closing section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)",
+    "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-only"
+    ],
+    "wheres": [
+     "section#contato \"Tem um projeto em mente? Vamos conversar\""
+    ]
+   },
+   {
+    "check": "card-layout",
+    "where": "section#projetos > div.projects-rail > div.projects-sticky > div.project-grid \"↗ REDES SOCIAIS · DIREÇÃO DE ARTE 01 / 0\"",
+    "msg": "5 of 5 cards drawn one way (one panel, ground, placement and fragment): copies of one card",
+    "fix": "a card layout at most twice on a page: build the other sections another way",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "card-layout"
+    ],
+    "wheres": [
+     "section#projetos > div.projects-rail > div.projects-sticky > div.project-grid \"↗ REDES SOCIAIS · DIREÇÃO DE ARTE 01 / 0\""
+    ]
+   },
+   {
+    "check": "cta",
+    "where": "section#topo",
+    "msg": "the hero has no button (the nav's does not count)",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "cta"
+    ],
+    "wheres": [
+     "section#topo"
+    ]
+   },
+   {
+    "check": "cta",
+    "where": "section#contato \"Tem um projeto em mente? Vamos conversar\"",
+    "msg": "the last section before the footer ends with no button",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "cta"
+    ],
+    "wheres": [
+     "section#contato \"Tem um projeto em mente? Vamos conversar\""
+    ]
+   },
+   {
+    "check": "heading-scale",
+    "where": "h2#contact-title \"Tem um projeto em mente? Vamos conversar\"",
+    "msg": "h2 headings in 2 sizes, 88px (\"Projetos com propósito.\") to 118px (x1.34)",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "heading-scale"
+    ],
+    "wheres": [
+     "h2#contact-title \"Tem um projeto em mente? Vamos conversar\""
+    ]
+   },
+   {
+    "check": "stagger",
+    "where": "h1#hero-title \"Design, intenção & Experiências que cone\"",
+    "msg": "the 4 lines of this heading start at 259, 688, 628, 740px: a headline broken across columns, read in a zigzag",
+    "fix": "start every row of the list on one left edge",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "stagger"
+    ],
+    "wheres": [
+     "h1#hero-title \"Design, intenção & Experiências que cone\""
+    ]
+   },
+   {
+    "check": "centre-axis",
+    "where": "h1#hero-title > span.hero-title-top.hero-title-enter \"Design, intenção\"",
+    "msg": "centred text 197px left of the middle of its page (523px against 720px)",
+    "fix": "centre the block on its container (margin-inline: auto), or set it on the left grid",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "centre-axis"
+    ],
+    "wheres": [
+     "h1#hero-title > span.hero-title-top.hero-title-enter \"Design, intenção\""
+    ]
+   },
+   {
+    "check": "centre-axis",
+    "where": "h1#hero-title > em.hero-title-enter \"Experiências que conectam.\"",
+    "msg": "centred text 197px right of the middle of its page (917px against 720px)",
+    "fix": "centre the block on its container (margin-inline: auto), or set it on the left grid",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "centre-axis"
+    ],
+    "wheres": [
+     "h1#hero-title > em.hero-title-enter \"Experiências que conectam.\""
+    ]
+   },
+   {
+    "check": "text-contrast",
+    "where": "nav#site-nav > div.language-switch > button.language-option:nth-of-type(2) > span \"English\"",
+    "msg": "a caption, label or muted line in #667368 on #f3f1e8 reads 4.4:1 (needs 4.5:1); 5 like it, like \"TRABALHO SELECIONADO\", \"Uma seleção de trabalh\", \"© 2026 Vinícius Azered\"",
+    "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-contrast"
+    ],
+    "wheres": [
+     "nav#site-nav > div.language-switch > button.language-option:nth-of-type(2) > span \"English\""
+    ]
+   },
+   {
+    "check": "text-contrast",
+    "where": "section#topo > div.hero-copy > div.hero-lower > p.hero-intro-enter \"Sou Vinícius, designer digital. Junto es\"",
+    "msg": "body text in #667368 on #f3f1e8 reads 4.4:1 (needs 7:1)",
+    "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-contrast"
+    ],
+    "wheres": [
+     "section#topo > div.hero-copy > div.hero-lower > p.hero-intro-enter \"Sou Vinícius, designer digital. Junto es\""
+    ]
+   },
+   {
+    "check": "text-contrast",
+    "where": "section#contato > div.contact-top > span.eyebrow \"02 · CONTATO\"",
+    "msg": "a caption, label or muted line in #667368 on #202c23 reads 2.92:1 (needs 4.5:1)",
+    "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-contrast"
+    ],
+    "wheres": [
+     "section#contato > div.contact-top > span.eyebrow \"02 · CONTATO\""
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#projetos / section#contato",
+    "msg": "352px between these sections, +155% against the median 138px of gaps at a change of ground",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "section#projetos / section#contato"
+    ]
+   },
+   {
+    "check": "effect-kind",
+    "where": "canvas.fluid-particles",
+    "msg": "a service page (--type) draws particles: particle code (particles.push(), 18600 canvas 2D shapes a second: effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)",
+    "fix": "take the effect off: a place, shop or service page leads with its photographs, flat colour and type, no effect and no pattern or glow ground (effects fit tech, gaming and software pages, and a product with a technical subject)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "effect-kind"
+    ],
+    "wheres": [
+     "canvas.fluid-particles"
+    ]
+   },
+   {
+    "check": "phone-number",
+    "where": "section#contato > div.contact-bottom > a \"+55 31 98214-2508\"",
+    "msg": "a phone number in international format: \"+55 31 98214-2508\"; a visitor can dial it and reach a stranger (and 2 more like it: nav#site-nav > a.nav-contact, again here)",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "section#contato > div.contact-bottom > a \"+55 31 98214-2508\""
+    ]
+   },
+   {
+    "check": "empty-area",
+    "where": "section#projetos \"Projetos com propósito.\"",
+    "msg": "71% of the section is empty: 1472px of empty rows between its content, 112px under its last (a.project-card:nth-of-type(4)), 2% beside content that covers under half the container, in its 2288px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "empty-area"
+    ],
+    "wheres": [
+     "section#projetos \"Projetos com propósito.\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "div.projects-rail:nth-of-type(2) > div.projects-sticky > div.projects-heading:nth-of-type(1) > a.text-link.desktop-link \"Mais projetos no Behance\"",
+    "msg": "Tab stop 10, a \"Mais projetos no Behance\": the focus lands on something you cannot see",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "div.projects-rail:nth-of-type(2) > div.projects-sticky > div.projects-heading:nth-of-type(1) > a.text-link.desktop-link \"Mais projetos no Behance\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "section#contato > a.contact-email \"viniam_leite@hotmail.com\"",
+    "msg": "Tab stop 17, a \"viniam_leite@hotmail.com\": the focus lands on something you cannot see",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "section#contato > a.contact-email \"viniam_leite@hotmail.com\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "section#contato > div.contact-bottom:nth-of-type(2) > a \"+55 31 98214-2508\"",
+    "msg": "Tab stop 18, a \"+55 31 98214-2508\": the focus lands on something you cannot see",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "section#contato > div.contact-bottom:nth-of-type(2) > a \"+55 31 98214-2508\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "section#contato > div.contact-bottom:nth-of-type(2) > div.social-links > a:nth-of-type(1) \"LinkedIn ↗\"",
+    "msg": "Tab stop 19, a \"LinkedIn ↗\": the focus lands on something you cannot see",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "section#contato > div.contact-bottom:nth-of-type(2) > div.social-links > a:nth-of-type(1) \"LinkedIn ↗\""
+    ]
+   },
+   {
+    "check": "run-on",
+    "where": "h1#hero-title \"Design, intenção&Experiências queconecta\"",
+    "msg": "\"& | Experiências queconectam\": the heading runs its first sentence into the grey second one with no stop",
+    "fix": "end the heading's first sentence with a full stop before its grey second one (\"Rooms and prices. Breakfast included.\")",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "run-on"
+    ],
+    "wheres": [
+     "h1#hero-title \"Design, intenção&Experiências queconecta\""
+    ]
+   },
+   {
+    "check": "hero-enter",
+    "where": "section#topo",
+    "msg": "the hero does not enter on load: no data-enter on the hero and no head line setting html.m-enter (motion.md, The hero's entrance)",
+    "fix": "put data-enter on the hero <section> and keep the head line from starter.html that sets html.m-enter",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "hero-enter"
+    ],
+    "wheres": [
+     "section#topo"
+    ]
+   },
+   {
+    "check": "moment-none",
+    "where": "(the page)",
+    "msg": "a service page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+    "fix": "deal one (moments.mjs pick --page service --photo) and mount it in its own section",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "moment-none"
+    ],
+    "wheres": [
+     "(the page)"
+    ]
+   },
+   {
+    "check": "hero-screen",
+    "where": "section#topo \"Portfólio · Web design & UI/UX Design, i\"",
+    "msg": "the hero ends at 752px on a 900px screen, 148px above the fold: it ends at the fold, 1px either way (SR-1)",
+    "fix": "make the hero exactly one screen (height: 100svh, its content fitted inside), never taller or shorter",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "hero-screen"
+    ],
+    "wheres": [
+     "section#topo \"Portfólio · Web design & UI/UX Design, i\""
+    ]
+   },
+   {
+    "check": "hero-screen",
+    "where": "section#projetos \"01Trabalho selecionado Projetos com prop\"",
+    "msg": "148px of the next section shows on the first screen (from 752px on a 900px screen): nothing below the hero shows at load (SR-1)",
+    "fix": "end the hero at the fold so nothing of the next section shows at load (hero height: 100svh)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "hero-screen"
+    ],
+    "wheres": [
+     "section#projetos \"01Trabalho selecionado Projetos com prop\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "footer.site-footer \"Vinícius Azeredo© 2026 Vinícius Azeredo\"",
+    "msg": "the section is 76px tall (0.1 screens), 824px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "footer.site-footer \"Vinícius Azeredo© 2026 Vinícius Azeredo\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "section#projetos \"01Trabalho selecionado Projetos com prop\"",
+    "msg": "the section is 2422px tall (2.7 screens), 622px over two screens (1800px): every section after the hero is one screen or two, 2px either way (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "section#projetos \"01Trabalho selecionado Projetos com prop\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "section#contato \"02 · Contato Aberto a boas conversas Tem\"",
+    "msg": "the section is 705px tall (0.8 screens), 195px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "section#contato \"02 · Contato Aberto a boas conversas Tem\""
+    ]
+   },
+   {
+    "check": "section-air",
+    "where": "section#projetos / section#contato",
+    "msg": "1812px of air between the content of these two sections: 128-480px (64-600px WARN) (SR-3)",
+    "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-air"
+    ],
+    "wheres": [
+     "section#projetos / section#contato"
+    ]
+   },
+   {
+    "check": "section-air",
+    "where": "section#projetos \"01Trabalho selecionado Projetos com prop\"",
+    "msg": "the content fills 28.7% of the section's height (695 of 2422px): 55% or more (40% WARN) (SR-3)",
+    "fix": "fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-air"
+    ],
+    "wheres": [
+     "section#projetos \"01Trabalho selecionado Projetos com prop\""
+    ]
+   },
+   {
+    "check": "section-air",
+    "where": "section#contato > div.contact-bottom \"+55 31 98214-2508LinkedIn ↗Behance ↗Inst\"",
+    "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+    "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-air"
+    ],
+    "wheres": [
+     "section#contato > div.contact-bottom \"+55 31 98214-2508LinkedIn ↗Behance ↗Inst\""
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "section#projetos \"01Trabalho selecionado Projetos com prop\"",
+    "msg": "the screen at scroll 2700px (stride 3) shows 390px of section 2 beside section 3: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section"
+    ],
+    "wheres": [
+     "section#projetos \"01Trabalho selecionado Projetos com prop\""
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "footer.site-footer \"Vinícius Azeredo© 2026 Vinícius Azeredo\"",
+    "msg": "the screen at scroll 3056px (the top of section 3) shows 76px of section 4 and the content of 2 sections, over 24px each beside section 3: a screen shows one section (another may peek 8px, 24px WARN) (and 1 more like it: scroll 84px) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section"
+    ],
+    "wheres": [
+     "footer.site-footer \"Vinícius Azeredo© 2026 Vinícius Azeredo\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "section#topo \"Portfólio · Web design & UI/UX Design, i\"",
+    "msg": "the content of section 1 runs -57px from the left and -57px from the right (read from its outermost blocks: no .wrap): the page's container starts at 60px; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+    "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "section#topo \"Portfólio · Web design & UI/UX Design, i\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "header.site-header \"Vinícius Azeredo Português English Sobre\"",
+    "msg": "the nav's content runs 60px from the left and 64px from the right (read from its outermost blocks: no .wrap): 60 and 64px are not one margin; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (and 3 more like it: \"01Trabalho selecionado P\", \"02 · Contato Aberto a bo\", \"Vinícius Azeredo© 2026 V\") (SR-6)",
+    "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "header.site-header \"Vinícius Azeredo Português English Sobre\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "canvas.fluid-particles",
+    "msg": "a <canvas> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "canvas.fluid-particles"
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "a.skip-link \"Pular para o conteúdo\"",
+    "msg": "a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 6 more like it: \"Vinícius Azeredo Portugu\", \"Vinícius Azeredo© 2026 V\", \"Portfólio · Web design &\") (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "a.skip-link \"Pular para o conteúdo\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "h1#hero-title > em.hero-title-enter \"Experiências queconectam.\"",
+    "msg": "1 text block starts on a left line at x 745, 685px from the container's left: text starts on the container's left, or on one split line (x 620, 732, 844) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "h1#hero-title > em.hero-title-enter \"Experiências queconectam.\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "section#topo > div.hero-copy > div.hero-lower > p.hero-intro-enter \"Sou Vinícius, designer digital. Junto es\"",
+    "msg": "1 text block starts on a left line at x 462, 402px from the container's left: text starts on the container's left, or on one split line (x 620, 732, 844) (and 1 more like it: x 377) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "section#topo > div.hero-copy > div.hero-lower > p.hero-intro-enter \"Sou Vinícius, designer digital. Junto es\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "h1#hero-title > span.hero-title-top.hero-title-enter \"Design, intenção\"",
+    "msg": "\"Design, intenção\" is set centred across 1160px, over half the 1554px container: text that wide is set left (SR-6)",
+    "fix": "set the text left (text-align: start)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "h1#hero-title > span.hero-title-top.hero-title-enter \"Design, intenção\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "section#projetos > div.projects-rail > div.projects-sticky \"Projetos com propósito.Uma seleção de tr\"",
+    "msg": "a clipped carousel: 1 item cut at rest (SR-7)",
+    "fix": "show every item inside the container, or stack them: no sideways scroller, no half-cut carousel",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "section#projetos > div.projects-rail > div.projects-sticky \"Projetos com propósito.Uma seleção de tr\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "div.projects-rail > div.projects-sticky > div.project-grid > a.project-card:nth-of-type(3) \"↗E-commerce · UX/UI03 / 07Hipromed Produ\"",
+    "msg": "a row item is cut by a frame round it: 384 x 445px of its 440 x 445px shows (SR-7)",
+    "fix": "show the row item whole: no frame cutting it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "div.projects-rail > div.projects-sticky > div.project-grid > a.project-card:nth-of-type(3) \"↗E-commerce · UX/UI03 / 07Hipromed Produ\""
+    ]
+   },
+   {
+    "check": "flush",
+    "where": "footer.site-footer > a.wordmark > span.wordmark-name \"Vinícius Azeredo\"",
+    "msg": "its first line sits 9px under the top edge of footer.site-footer, where the ground changes",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "flush"
+    ],
+    "wheres": [
+     "footer.site-footer > a.wordmark > span.wordmark-name \"Vinícius Azeredo\""
+    ]
+   },
+   {
+    "check": "nav",
+    "where": "header.site-header > a.wordmark \"Vinícius Azeredo\"",
+    "msg": "nav link wraps to a second line",
+    "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "nav"
+    ],
+    "wheres": [
+     "header.site-header > a.wordmark \"Vinícius Azeredo\""
+    ]
+   },
+   {
+    "check": "no-visual",
+    "where": "section#projetos \"Projetos com propósito.\"",
+    "msg": "pictures, effects and mocks cover 9% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "no-visual"
+    ],
+    "wheres": [
+     "section#projetos \"Projetos com propósito.\""
+    ]
+   },
+   {
+    "check": "heading-scale",
+    "where": "h2#projects-title \"Projetos com propósito.\"",
+    "msg": "an h2 at 56px, as large as the h1 (40.1px) or larger (and 1 more like it: \"Tem um projeto em mente?\")",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "heading-scale"
+    ],
+    "wheres": [
+     "h2#projects-title \"Projetos com propósito.\""
+    ]
+   },
+   {
+    "check": "text-contrast",
+    "where": "section#projetos > div.section-kicker > span:nth-of-type(2) \"TRABALHO SELECIONADO\"",
+    "msg": "a caption, label or muted line in #667368 on #f3f1e8 reads 4.4:1 (needs 4.5:1); 4 like it, like \"Uma seleção de trabalh\", \"© 2026 Vinícius Azered\", \"2026\"",
+    "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-contrast"
+    ],
+    "wheres": [
+     "section#projetos > div.section-kicker > span:nth-of-type(2) \"TRABALHO SELECIONADO\""
+    ]
+   },
+   {
+    "check": "off-viewport",
+    "where": "div.hero-copy > h1#hero-title > span.hero-title-top.hero-title-enter \"Design, intenção\"",
+    "msg": "at 320px wide it runs 28px past the screen's left edge (cut there: the page clips what runs past it)",
+    "fix": "keep it inside the screen at this width: let it shrink, wrap or stack",
+    "widths": [
+     320
+    ],
+    "from": "consistency",
+    "ids": [
+     "off-viewport"
+    ],
+    "wheres": [
+     "div.hero-copy > h1#hero-title > span.hero-title-top.hero-title-enter \"Design, intenção\""
+    ]
+   },
+   {
+    "check": "off-viewport",
+    "where": "div.hero-copy > h1#hero-title > em.hero-title-enter.is-entered \"Experiências que conectam.\"",
+    "msg": "at 320px wide it runs 28px past the screen's right edge (cut there: the page clips what runs past it)",
+    "fix": "keep it inside the screen at this width: let it shrink, wrap or stack",
+    "widths": [
+     320
+    ],
+    "from": "consistency",
+    "ids": [
+     "off-viewport"
+    ],
+    "wheres": [
+     "div.hero-copy > h1#hero-title > em.hero-title-enter.is-entered \"Experiências que conectam.\""
+    ]
+   },
+   {
+    "check": "container",
+    "where": "page",
+    "msg": "no .wrap",
+    "fix": "put the content in one .wrap",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "container"
+    ],
+    "wheres": [
+     "page"
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "flush",
+    "where": "footer.site-footer > a.wordmark > span.wordmark-name \"Vinícius Azeredo\"",
+    "msg": "its first line sits 26px under the top edge of footer.site-footer, where the ground changes",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div.project-grid > a.project-card:nth-of-type(1) > div.project-meta > span:nth-of-type(1) \"REDES SOCIAIS · DIREÇÃO DE ARTE\"",
+    "msg": "cut 34px at the left by the overflow of section#projetos > div.projects-rail > div.projects-sticky (inside a held section or scroll scene, whose motion --quick does not check) (and 2 more like it: \"SevenX Gaming\", \"Comunicação digital para\")",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "fold-cut",
+    "where": "h2#projects-title \"Projetos com propósito.\"",
+    "msg": "a 88px line is sliced by the bottom of the first screen (74px of it below the fold) (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "size the hero so the heading ends above the fold, or starts below it",
+    "widths": [
+     1440,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "no-visual",
+    "where": "section#projetos \"Projetos com propósito.\"",
+    "msg": "pictures, effects and mocks cover 22% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-buttons",
+    "where": "nav#site-nav > a.nav-contact \"Vamos conversar ↗\"",
+    "msg": "\"Vamos conversar ↗\" does not start with a verb (book, buy, try, start, get, see...)",
+    "fix": "label buttons with a verb and what the visitor gets (\"Book a room\", \"Start free trial\")",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-actions",
+    "where": "(the page)",
+    "msg": "the main action \"View selected projects\" does not read word for word the same in the nav or hero and the closing section",
+    "fix": "few actions, one wording: at most 2 in the hero, the main action word for word in nav, hero and close",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#topo / section#projetos",
+    "msg": "83px between these sections, -40% against the median 138px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#contato / footer.site-footer",
+    "msg": "uneven space at the edge of a band: 26px outside its edge, 112px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "div.project-grid > a.project-card:nth-of-type(1) > div.project-visual > img \"sevenxthumb.webp\"",
+    "msg": "2 photographs in more than one look: lightness from 0.45 to 0.94; the odd one out is sevenxthumb.webp",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-family",
+    "where": "header.site-header",
+    "msg": "the nav's links come in 2 sizes (13, 11px)",
+    "fix": "keep one nav on every screen: the same bar, fill, links and type",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "skip-link",
+    "where": "a.skip-link \"Pular para o conteúdo\"",
+    "msg": "the first Tab stop is \"Pular para o conteúdo\", not a skip link: a keyboard user tabs through the whole nav on every visit",
+    "fix": "add the starter's skip link as the header's first child: <a class=\"skip-link\" href=\"#top\">Skip to content</a>",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "row-lines",
+    "where": "section#projetos > div.projects-rail > div.projects-sticky > div.project-grid \"↗Redes sociais · Direção de arte01 / 07S\"",
+    "msg": "a row of 6 items: its last item ends at 2840px, the container's right line at 1380px (2px either way) (it sits in a part held on screen as the page scrolls: told as a WARN) (SR-7)",
+    "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "header.site-header > a.wordmark \"Vinícius Azeredo\"",
+    "msg": "a 31x31px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "header.site-header > div.header-actions > div.mobile-lang-dropdown > button.mobile-lang-trigger",
+    "msg": "a 38x38px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "header.site-header > div.header-actions > button.menu-toggle",
+    "msg": "a 38x38px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "section#topo > div.hero-copy > div.hero-lower > a.text-link.hero-cta-enter \"Conheça meu trabalho ↓\"",
+    "msg": "a 212x37px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "section#projetos > a.text-link.mobile-link \"Mais projetos no Behance ↗\"",
+    "msg": "a 186x37px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "section#contato > a.contact-email \"viniam_leite@hotmail.com ↗\"",
+    "msg": "a 192x30px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "section#contato > div.contact-bottom > a \"+55 31 98214-2508\"",
+    "msg": "a 98x18px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "section#contato > div.contact-bottom > div.social-links > a:nth-of-type(1) \"LinkedIn ↗\"",
+    "msg": "a 53x18px tap target (and 2 more like it on this screen): under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "footer.site-footer > a.wordmark \"Vinícius Azeredo\"",
+    "msg": "a 31x31px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div.project-grid > a.project-card:nth-of-type(1) > div.project-card-content > p \"Comunicação digital para Bullsbet e Jogã\"",
+    "msg": "cut 214px at the left by the overflow of section#projetos > div.projects-rail > div.projects-sticky (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div.project-grid > a.project-card:nth-of-type(2) > div.project-meta > span:nth-of-type(2) \"02 / 07\"",
+    "msg": "cut 21px at the right by the overflow of section#projetos > div.projects-rail > div.projects-sticky (inside a held section or scroll scene, whose motion --quick does not check) (and 1 more like it: \"Presença digital acolhed\")",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#projetos / section#contato",
+    "msg": "uneven space at the edge of a band: 99px outside its edge, 48px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 88,
+   "layout": 13
+  }
+ },
+ "open": [
+  {
+   "check": "hero-fill",
+   "where": "section#projetos \"Projetos com propósito.\"",
+   "msg": "the next section shows on the first screen: it starts at 779px on a 900px screen (the hero ends at 752px)",
+   "fix": "let the hero fill the first screen alone (min-height: 100svh, less above it): nothing of the next section on load",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "hero-fill"
+   ],
+   "wheres": [
+    "section#projetos \"Projetos com propósito.\""
+   ]
+  },
+  {
+   "check": "scroll-reveal",
+   "where": "section#contato \"02 · CONTATO Aberto a boas conversas Tem\"",
+   "msg": "starts \"opacity\" (0.7 s) the moment it is scrolled into view (an IntersectionObserver)",
+   "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "scroll-reveal"
+   ],
+   "wheres": [
+    "section#contato \"02 · CONTATO Aberto a boas conversas Tem\""
+   ]
+  },
+  {
+   "check": "pinned",
+   "where": "section#projetos > div.projects-rail > div.projects-sticky \"Projetos com propósito. Uma seleção de t\"",
+   "msg": "held on screen for 1.6 screens of scroll (position: sticky) while the page moves on",
+   "fix": "let the section scroll with the page",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "pinned"
+   ],
+   "wheres": [
+    "section#projetos > div.projects-rail > div.projects-sticky \"Projetos com propósito. Uma seleção de t\""
+   ]
+  },
+  {
+   "check": "text-only",
+   "where": "section#topo \"Design, intenção & Experiências que cone\"",
+   "msg": "the section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)",
+   "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-only"
+   ],
+   "wheres": [
+    "section#topo \"Design, intenção & Experiências que cone\""
+   ]
+  },
+  {
+   "check": "text-only",
+   "where": "section#contato \"Tem um projeto em mente? Vamos conversar\"",
+   "msg": "the closing section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)",
+   "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-only"
+   ],
+   "wheres": [
+    "section#contato \"Tem um projeto em mente? Vamos conversar\""
+   ]
+  },
+  {
+   "check": "card-layout",
+   "where": "section#projetos > div.projects-rail > div.projects-sticky > div.project-grid \"↗ REDES SOCIAIS · DIREÇÃO DE ARTE 01 / 0\"",
+   "msg": "5 of 5 cards drawn one way (one panel, ground, placement and fragment): copies of one card",
+   "fix": "a card layout at most twice on a page: build the other sections another way",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "card-layout"
+   ],
+   "wheres": [
+    "section#projetos > div.projects-rail > div.projects-sticky > div.project-grid \"↗ REDES SOCIAIS · DIREÇÃO DE ARTE 01 / 0\""
+   ]
+  },
+  {
+   "check": "cta",
+   "where": "section#topo",
+   "msg": "the hero has no button (the nav's does not count)",
+   "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "cta"
+   ],
+   "wheres": [
+    "section#topo"
+   ]
+  },
+  {
+   "check": "cta",
+   "where": "section#contato \"Tem um projeto em mente? Vamos conversar\"",
+   "msg": "the last section before the footer ends with no button",
+   "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "cta"
+   ],
+   "wheres": [
+    "section#contato \"Tem um projeto em mente? Vamos conversar\""
+   ]
+  },
+  {
+   "check": "heading-scale",
+   "where": "h2#contact-title \"Tem um projeto em mente? Vamos conversar\"",
+   "msg": "h2 headings in 2 sizes, 88px (\"Projetos com propósito.\") to 118px (x1.34)",
+   "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "heading-scale"
+   ],
+   "wheres": [
+    "h2#contact-title \"Tem um projeto em mente? Vamos conversar\""
+   ]
+  },
+  {
+   "check": "stagger",
+   "where": "h1#hero-title \"Design, intenção & Experiências que cone\"",
+   "msg": "the 4 lines of this heading start at 259, 688, 628, 740px: a headline broken across columns, read in a zigzag",
+   "fix": "start every row of the list on one left edge",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "stagger"
+   ],
+   "wheres": [
+    "h1#hero-title \"Design, intenção & Experiências que cone\""
+   ]
+  },
+  {
+   "check": "centre-axis",
+   "where": "h1#hero-title > span.hero-title-top.hero-title-enter \"Design, intenção\"",
+   "msg": "centred text 197px left of the middle of its page (523px against 720px)",
+   "fix": "centre the block on its container (margin-inline: auto), or set it on the left grid",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "centre-axis"
+   ],
+   "wheres": [
+    "h1#hero-title > span.hero-title-top.hero-title-enter \"Design, intenção\""
+   ]
+  },
+  {
+   "check": "centre-axis",
+   "where": "h1#hero-title > em.hero-title-enter \"Experiências que conectam.\"",
+   "msg": "centred text 197px right of the middle of its page (917px against 720px)",
+   "fix": "centre the block on its container (margin-inline: auto), or set it on the left grid",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "centre-axis"
+   ],
+   "wheres": [
+    "h1#hero-title > em.hero-title-enter \"Experiências que conectam.\""
+   ]
+  },
+  {
+   "check": "text-contrast",
+   "where": "nav#site-nav > div.language-switch > button.language-option:nth-of-type(2) > span \"English\"",
+   "msg": "a caption, label or muted line in #667368 on #f3f1e8 reads 4.4:1 (needs 4.5:1); 5 like it, like \"TRABALHO SELECIONADO\", \"Uma seleção de trabalh\", \"© 2026 Vinícius Azered\"",
+   "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-contrast"
+   ],
+   "wheres": [
+    "nav#site-nav > div.language-switch > button.language-option:nth-of-type(2) > span \"English\""
+   ]
+  },
+  {
+   "check": "text-contrast",
+   "where": "section#topo > div.hero-copy > div.hero-lower > p.hero-intro-enter \"Sou Vinícius, designer digital. Junto es\"",
+   "msg": "body text in #667368 on #f3f1e8 reads 4.4:1 (needs 7:1)",
+   "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-contrast"
+   ],
+   "wheres": [
+    "section#topo > div.hero-copy > div.hero-lower > p.hero-intro-enter \"Sou Vinícius, designer digital. Junto es\""
+   ]
+  },
+  {
+   "check": "text-contrast",
+   "where": "section#contato > div.contact-top > span.eyebrow \"02 · CONTATO\"",
+   "msg": "a caption, label or muted line in #667368 on #202c23 reads 2.92:1 (needs 4.5:1)",
+   "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-contrast"
+   ],
+   "wheres": [
+    "section#contato > div.contact-top > span.eyebrow \"02 · CONTATO\""
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "section#projetos / section#contato",
+   "msg": "352px between these sections, +155% against the median 138px of gaps at a change of ground",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "section#projetos / section#contato"
+   ]
+  },
+  {
+   "check": "effect-kind",
+   "where": "canvas.fluid-particles",
+   "msg": "a service page (--type) draws particles: particle code (particles.push(), 18600 canvas 2D shapes a second: effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)",
+   "fix": "take the effect off: a place, shop or service page leads with its photographs, flat colour and type, no effect and no pattern or glow ground (effects fit tech, gaming and software pages, and a product with a technical subject)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "effect-kind"
+   ],
+   "wheres": [
+    "canvas.fluid-particles"
+   ]
+  },
+  {
+   "check": "phone-number",
+   "where": "section#contato > div.contact-bottom > a \"+55 31 98214-2508\"",
+   "msg": "a phone number in international format: \"+55 31 98214-2508\"; a visitor can dial it and reach a stranger (and 2 more like it: nav#site-nav > a.nav-contact, again here)",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "section#contato > div.contact-bottom > a \"+55 31 98214-2508\""
+   ]
+  },
+  {
+   "check": "empty-area",
+   "where": "section#projetos \"Projetos com propósito.\"",
+   "msg": "71% of the section is empty: 1472px of empty rows between its content, 112px under its last (a.project-card:nth-of-type(4)), 2% beside content that covers under half the container, in its 2288px of rows (WARN over 35%, FAIL over 50%)",
+   "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "empty-area"
+   ],
+   "wheres": [
+    "section#projetos \"Projetos com propósito.\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "div.projects-rail:nth-of-type(2) > div.projects-sticky > div.projects-heading:nth-of-type(1) > a.text-link.desktop-link \"Mais projetos no Behance\"",
+   "msg": "Tab stop 10, a \"Mais projetos no Behance\": the focus lands on something you cannot see",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "div.projects-rail:nth-of-type(2) > div.projects-sticky > div.projects-heading:nth-of-type(1) > a.text-link.desktop-link \"Mais projetos no Behance\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "section#contato > a.contact-email \"viniam_leite@hotmail.com\"",
+   "msg": "Tab stop 17, a \"viniam_leite@hotmail.com\": the focus lands on something you cannot see",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "section#contato > a.contact-email \"viniam_leite@hotmail.com\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "section#contato > div.contact-bottom:nth-of-type(2) > a \"+55 31 98214-2508\"",
+   "msg": "Tab stop 18, a \"+55 31 98214-2508\": the focus lands on something you cannot see",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "section#contato > div.contact-bottom:nth-of-type(2) > a \"+55 31 98214-2508\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "section#contato > div.contact-bottom:nth-of-type(2) > div.social-links > a:nth-of-type(1) \"LinkedIn ↗\"",
+   "msg": "Tab stop 19, a \"LinkedIn ↗\": the focus lands on something you cannot see",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "section#contato > div.contact-bottom:nth-of-type(2) > div.social-links > a:nth-of-type(1) \"LinkedIn ↗\""
+   ]
+  },
+  {
+   "check": "run-on",
+   "where": "h1#hero-title \"Design, intenção&Experiências queconecta\"",
+   "msg": "\"& | Experiências queconectam\": the heading runs its first sentence into the grey second one with no stop",
+   "fix": "end the heading's first sentence with a full stop before its grey second one (\"Rooms and prices. Breakfast included.\")",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "run-on"
+   ],
+   "wheres": [
+    "h1#hero-title \"Design, intenção&Experiências queconecta\""
+   ]
+  },
+  {
+   "check": "hero-enter",
+   "where": "section#topo",
+   "msg": "the hero does not enter on load: no data-enter on the hero and no head line setting html.m-enter (motion.md, The hero's entrance)",
+   "fix": "put data-enter on the hero <section> and keep the head line from starter.html that sets html.m-enter",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "hero-enter"
+   ],
+   "wheres": [
+    "section#topo"
+   ]
+  },
+  {
+   "check": "moment-none",
+   "where": "(the page)",
+   "msg": "a service page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+   "fix": "deal one (moments.mjs pick --page service --photo) and mount it in its own section",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "moment-none"
+   ],
+   "wheres": [
+    "(the page)"
+   ]
+  },
+  {
+   "check": "hero-screen",
+   "where": "section#topo \"Portfólio · Web design & UI/UX Design, i\"",
+   "msg": "the hero ends at 752px on a 900px screen, 148px above the fold: it ends at the fold, 1px either way (SR-1)",
+   "fix": "make the hero exactly one screen (height: 100svh, its content fitted inside), never taller or shorter",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "hero-screen"
+   ],
+   "wheres": [
+    "section#topo \"Portfólio · Web design & UI/UX Design, i\""
+   ]
+  },
+  {
+   "check": "hero-screen",
+   "where": "section#projetos \"01Trabalho selecionado Projetos com prop\"",
+   "msg": "148px of the next section shows on the first screen (from 752px on a 900px screen): nothing below the hero shows at load (SR-1)",
+   "fix": "end the hero at the fold so nothing of the next section shows at load (hero height: 100svh)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "hero-screen"
+   ],
+   "wheres": [
+    "section#projetos \"01Trabalho selecionado Projetos com prop\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "footer.site-footer \"Vinícius Azeredo© 2026 Vinícius Azeredo\"",
+   "msg": "the section is 76px tall (0.1 screens), 824px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+   "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "footer.site-footer \"Vinícius Azeredo© 2026 Vinícius Azeredo\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "section#projetos \"01Trabalho selecionado Projetos com prop\"",
+   "msg": "the section is 2422px tall (2.7 screens), 622px over two screens (1800px): every section after the hero is one screen or two, 2px either way (SR-2)",
+   "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "section#projetos \"01Trabalho selecionado Projetos com prop\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "section#contato \"02 · Contato Aberto a boas conversas Tem\"",
+   "msg": "the section is 705px tall (0.8 screens), 195px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+   "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "section#contato \"02 · Contato Aberto a boas conversas Tem\""
+   ]
+  },
+  {
+   "check": "section-air",
+   "where": "section#projetos / section#contato",
+   "msg": "1812px of air between the content of these two sections: 128-480px (64-600px WARN) (SR-3)",
+   "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-air"
+   ],
+   "wheres": [
+    "section#projetos / section#contato"
+   ]
+  },
+  {
+   "check": "section-air",
+   "where": "section#projetos \"01Trabalho selecionado Projetos com prop\"",
+   "msg": "the content fills 28.7% of the section's height (695 of 2422px): 55% or more (40% WARN) (SR-3)",
+   "fix": "fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-air"
+   ],
+   "wheres": [
+    "section#projetos \"01Trabalho selecionado Projetos com prop\""
+   ]
+  },
+  {
+   "check": "section-air",
+   "where": "section#contato > div.contact-bottom \"+55 31 98214-2508LinkedIn ↗Behance ↗Inst\"",
+   "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+   "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-air"
+   ],
+   "wheres": [
+    "section#contato > div.contact-bottom \"+55 31 98214-2508LinkedIn ↗Behance ↗Inst\""
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "section#projetos \"01Trabalho selecionado Projetos com prop\"",
+   "msg": "the screen at scroll 2700px (stride 3) shows 390px of section 2 beside section 3: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+   "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section"
+   ],
+   "wheres": [
+    "section#projetos \"01Trabalho selecionado Projetos com prop\""
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "footer.site-footer \"Vinícius Azeredo© 2026 Vinícius Azeredo\"",
+   "msg": "the screen at scroll 3056px (the top of section 3) shows 76px of section 4 and the content of 2 sections, over 24px each beside section 3: a screen shows one section (another may peek 8px, 24px WARN) (and 1 more like it: scroll 84px) (SR-4)",
+   "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section"
+   ],
+   "wheres": [
+    "footer.site-footer \"Vinícius Azeredo© 2026 Vinícius Azeredo\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "section#topo \"Portfólio · Web design & UI/UX Design, i\"",
+   "msg": "the content of section 1 runs -57px from the left and -57px from the right (read from its outermost blocks: no .wrap): the page's container starts at 60px; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+   "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "section#topo \"Portfólio · Web design & UI/UX Design, i\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "header.site-header \"Vinícius Azeredo Português English Sobre\"",
+   "msg": "the nav's content runs 60px from the left and 64px from the right (read from its outermost blocks: no .wrap): 60 and 64px are not one margin; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (and 3 more like it: \"01Trabalho selecionado P\", \"02 · Contato Aberto a bo\", \"Vinícius Azeredo© 2026 V\") (SR-6)",
+   "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "header.site-header \"Vinícius Azeredo Português English Sobre\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "canvas.fluid-particles",
+   "msg": "a <canvas> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "canvas.fluid-particles"
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "a.skip-link \"Pular para o conteúdo\"",
+   "msg": "a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 6 more like it: \"Vinícius Azeredo Portugu\", \"Vinícius Azeredo© 2026 V\", \"Portfólio · Web design &\") (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "a.skip-link \"Pular para o conteúdo\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "h1#hero-title > em.hero-title-enter \"Experiências queconectam.\"",
+   "msg": "1 text block starts on a left line at x 745, 685px from the container's left: text starts on the container's left, or on one split line (x 620, 732, 844) (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "h1#hero-title > em.hero-title-enter \"Experiências queconectam.\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "section#topo > div.hero-copy > div.hero-lower > p.hero-intro-enter \"Sou Vinícius, designer digital. Junto es\"",
+   "msg": "1 text block starts on a left line at x 462, 402px from the container's left: text starts on the container's left, or on one split line (x 620, 732, 844) (and 1 more like it: x 377) (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "section#topo > div.hero-copy > div.hero-lower > p.hero-intro-enter \"Sou Vinícius, designer digital. Junto es\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "h1#hero-title > span.hero-title-top.hero-title-enter \"Design, intenção\"",
+   "msg": "\"Design, intenção\" is set centred across 1160px, over half the 1554px container: text that wide is set left (SR-6)",
+   "fix": "set the text left (text-align: start)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "h1#hero-title > span.hero-title-top.hero-title-enter \"Design, intenção\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "section#projetos > div.projects-rail > div.projects-sticky \"Projetos com propósito.Uma seleção de tr\"",
+   "msg": "a clipped carousel: 1 item cut at rest (SR-7)",
+   "fix": "show every item inside the container, or stack them: no sideways scroller, no half-cut carousel",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "section#projetos > div.projects-rail > div.projects-sticky \"Projetos com propósito.Uma seleção de tr\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "div.projects-rail > div.projects-sticky > div.project-grid > a.project-card:nth-of-type(3) \"↗E-commerce · UX/UI03 / 07Hipromed Produ\"",
+   "msg": "a row item is cut by a frame round it: 384 x 445px of its 440 x 445px shows (SR-7)",
+   "fix": "show the row item whole: no frame cutting it",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "div.projects-rail > div.projects-sticky > div.project-grid > a.project-card:nth-of-type(3) \"↗E-commerce · UX/UI03 / 07Hipromed Produ\""
+   ]
+  },
+  {
+   "check": "flush",
+   "where": "footer.site-footer > a.wordmark > span.wordmark-name \"Vinícius Azeredo\"",
+   "msg": "its first line sits 9px under the top edge of footer.site-footer, where the ground changes",
+   "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "flush"
+   ],
+   "wheres": [
+    "footer.site-footer > a.wordmark > span.wordmark-name \"Vinícius Azeredo\""
+   ]
+  },
+  {
+   "check": "nav",
+   "where": "header.site-header > a.wordmark \"Vinícius Azeredo\"",
+   "msg": "nav link wraps to a second line",
+   "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "nav"
+   ],
+   "wheres": [
+    "header.site-header > a.wordmark \"Vinícius Azeredo\""
+   ]
+  },
+  {
+   "check": "no-visual",
+   "where": "section#projetos \"Projetos com propósito.\"",
+   "msg": "pictures, effects and mocks cover 9% of this section; a feature section needs a visual (about 25% or more)",
+   "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "no-visual"
+   ],
+   "wheres": [
+    "section#projetos \"Projetos com propósito.\""
+   ]
+  },
+  {
+   "check": "heading-scale",
+   "where": "h2#projects-title \"Projetos com propósito.\"",
+   "msg": "an h2 at 56px, as large as the h1 (40.1px) or larger (and 1 more like it: \"Tem um projeto em mente?\")",
+   "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "heading-scale"
+   ],
+   "wheres": [
+    "h2#projects-title \"Projetos com propósito.\""
+   ]
+  },
+  {
+   "check": "text-contrast",
+   "where": "section#projetos > div.section-kicker > span:nth-of-type(2) \"TRABALHO SELECIONADO\"",
+   "msg": "a caption, label or muted line in #667368 on #f3f1e8 reads 4.4:1 (needs 4.5:1); 4 like it, like \"Uma seleção de trabalh\", \"© 2026 Vinícius Azered\", \"2026\"",
+   "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-contrast"
+   ],
+   "wheres": [
+    "section#projetos > div.section-kicker > span:nth-of-type(2) \"TRABALHO SELECIONADO\""
+   ]
+  },
+  {
+   "check": "off-viewport",
+   "where": "div.hero-copy > h1#hero-title > span.hero-title-top.hero-title-enter \"Design, intenção\"",
+   "msg": "at 320px wide it runs 28px past the screen's left edge (cut there: the page clips what runs past it)",
+   "fix": "keep it inside the screen at this width: let it shrink, wrap or stack",
+   "widths": [
+    320
+   ],
+   "from": "consistency",
+   "ids": [
+    "off-viewport"
+   ],
+   "wheres": [
+    "div.hero-copy > h1#hero-title > span.hero-title-top.hero-title-enter \"Design, intenção\""
+   ]
+  },
+  {
+   "check": "off-viewport",
+   "where": "div.hero-copy > h1#hero-title > em.hero-title-enter.is-entered \"Experiências que conectam.\"",
+   "msg": "at 320px wide it runs 28px past the screen's right edge (cut there: the page clips what runs past it)",
+   "fix": "keep it inside the screen at this width: let it shrink, wrap or stack",
+   "widths": [
+    320
+   ],
+   "from": "consistency",
+   "ids": [
+    "off-viewport"
+   ],
+   "wheres": [
+    "div.hero-copy > h1#hero-title > em.hero-title-enter.is-entered \"Experiências que conectam.\""
+   ]
+  },
+  {
+   "check": "container",
+   "where": "page",
+   "msg": "no .wrap",
+   "fix": "put the content in one .wrap",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "container"
+   ],
+   "wheres": [
+    "page"
+   ]
+  }
+ ],
+ "waived": [],
+ "warnCount": 24,
+ "at": "2026-11-19T18:47:54.879Z"
+}
