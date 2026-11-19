@@ -105,6 +105,7 @@ body.is-english .project-visual::after { content: "View project"; }
 .hero-eyebrow, .hero-title-enter, .hero-intro-enter, .hero-cta-enter { opacity: 1; }
 .hero-title-enter { display: block; }
 .hero-letter { display: inline-block; white-space: pre; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .eyebrow, .section-kicker, .section-intro p, .project-meta, .image-caption { font-size: 11px; line-height: 1.4; letter-spacing: .11em; text-transform: uppercase; }
 .eyebrow { display: flex; justify-content: center; align-items: center; gap: 9px; color: var(--muted); }
 .availability-dot { width: 7px; height: 7px; border-radius: 50%; background: #718b65; display: inline-block; box-shadow: 0 0 0 4px rgba(113,139,101,.14); }

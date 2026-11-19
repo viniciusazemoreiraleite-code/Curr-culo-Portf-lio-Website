@@ -472,8 +472,6 @@ const setLanguage = (language, animate = true) => {
     if (isEnglish && translations[element.dataset.i18n]) element.innerHTML = translations[element.dataset.i18n];
     else if (!isEnglish) element.innerHTML = element.dataset.pt || element.innerHTML;
   });
-  const heroEyebrowText = document.querySelector('.hero-eyebrow [data-i18n="heroEyebrow"]');
-  if (heroEyebrowText) heroEyebrowText.setAttribute('aria-label', heroEyebrowText.textContent.trim());
   document.querySelectorAll('[data-i18n-title]').forEach((element) => {
     if (!element.dataset.ptTitle) element.dataset.ptTitle = element.getAttribute('title') || '';
     element.setAttribute('title', isEnglish ? (translations[element.dataset.i18nTitle] || element.dataset.ptTitle) : element.dataset.ptTitle);
@@ -822,7 +820,6 @@ const initHeroSequence = () => {
   try { sessionStorage.setItem('portfolio-home-entered', 'true'); } catch {}
 
   const originalText = eyebrowText.textContent.trim();
-  eyebrowText.setAttribute('aria-label', originalText);
   eyebrowText.replaceChildren(...Array.from(originalText, (character, index) => {
     const letter = document.createElement('span');
     letter.className = 'hero-letter';
